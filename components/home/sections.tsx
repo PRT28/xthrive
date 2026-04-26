@@ -148,14 +148,7 @@ export function ClassesSection({ content }: { content: any }) {
                 ))}
               </h2>
             </div>
-            <p className={styles.classesIntro}>
-              {content.intro.split("\n").map((line: string) => (
-                <span key={line}>
-                  {line}
-                  <br />
-                </span>
-              ))}
-            </p>
+            
           </div>
 
           <div className={styles.quickStats} data-reveal data-reveal-state="hidden">
@@ -197,14 +190,7 @@ export function ClassesSection({ content }: { content: any }) {
               />
               <div className={styles.classOverlay} />
               <div className={styles.classTint} />
-              <div className={styles.classArrow}>
-                <div className={styles.classArrowButton}>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles.classArrowIcon}>
-                    <path d="M7 17L17 7" />
-                    <path d="M7 7h10v10" />
-                  </svg>
-                </div>
-              </div>
+              
 
               <div className={styles.classContent}>
                 <div className={styles.classTopRow}>

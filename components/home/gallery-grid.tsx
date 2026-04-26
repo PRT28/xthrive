@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "@/components/site.module.css";
 
-const initialImageCount = 3;
+const initialImageCount = 9;
 
 export function GalleryGrid({ images }: { images: Array<{ src: string; alt: string }> }) {
   const [expanded, setExpanded] = useState(false);

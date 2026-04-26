@@ -251,7 +251,7 @@
       "Group",
       "Classes"
     ],
-    "intro": "Coach-led, fully programmed, scaled to your level.\n6 class types · 8 sessions daily · HSR Layout, Bangalore.",
+    "intro": "",
     "quickStats": [
       {
         "value": "8",
@@ -465,8 +465,7 @@
       "Before You Walk In"
     ],
     "paragraphs": [
-      "A quick look at the floor, the training environment, and the atmosphere at Xthrive HSR.",
-      "Swap these images in the codebase whenever you want to refresh the space, classes, or equipment shown here."
+      "A quick look at the floor, the training environment, and the atmosphere at Xthrive HSR."
     ],
     "cta": {
       "type": "open-modal",
@@ -622,7 +621,7 @@
     ]
   },
   "footer": {
-    "brandCopy": "HSR Layout's favourite functional fitness & strength conditioning gym. Rated 4.9★ on Google. Building stronger people since 2018.",
+    "brandCopy": "HSR Layout's favourite functional fitness & strength conditioning gym. Rated 4.9★ on Google.",
     "quickLinks": [
       {
         "label": "Group Classes",
