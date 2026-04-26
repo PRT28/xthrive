@@ -1,0 +1,677 @@
+{
+  "site": {
+    "name": "Xthrive HSR",
+    "logoSrc": "https://xthrive.in/icon-full-white.png",
+    "logoAlt": "Xthrive HSR",
+    "phoneDisplay": "8951049082",
+    "phoneLink": "tel:+918951049082",
+    "email": "coachsharanchinivar@gmail.com",
+    "addressLine1": "4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
+    "addressLine2": "Bengaluru, Karnataka 560102",
+    "copyrightText": "© 2026 Xthrive HSR · 4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+    "footerMeta": "Strength & Conditioning Gym · Functional Fitness · HSR Layout · Bengaluru",
+    "mapUrl": "https://maps.google.com/?q=4th+Floor,+No.446,+17th+Cross+Rd,+above+HDFC+Bank,+Sector+4,+HSR+Layout,+Bengaluru,+Karnataka+560102",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=4th%20Floor%2C%20No.446%2C%2017th%20Cross%20Rd%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&z=16&output=embed",
+    "instagramAction": {
+      "type": "external-link",
+      "label": "Instagram",
+      "url": "https://www.instagram.com/xthrive.hsr?igsh=MTB0NWF5c3hpY3Y4ZA==",
+      "newTab": true
+    },
+    "linkedinAction": {
+      "type": "external-link",
+      "label": "LinkedIn",
+      "url": "https://in.linkedin.com/company/xthrive",
+      "newTab": true
+    },
+    "whatsappAction": {
+      "type": "external-link",
+      "label": "WhatsApp",
+      "url": "https://wa.me/918951049082",
+      "newTab": true
+    }
+  },
+  "navbar": {
+    "navItems": [
+      {
+        "label": "Classes",
+        "action": {
+          "type": "section-link",
+          "label": "Classes",
+          "sectionId": "services"
+        }
+      },
+      {
+        "label": "Transformations",
+        "action": {
+          "type": "section-link",
+          "label": "Transformations",
+          "sectionId": "transformations"
+        }
+      },
+      {
+        "label": "Reviews",
+        "action": {
+          "type": "section-link",
+          "label": "Reviews",
+          "sectionId": "reviews"
+        }
+      },
+      {
+        "label": "Gallery",
+        "action": {
+          "type": "section-link",
+          "label": "Gallery",
+          "sectionId": "gallery"
+        }
+      },
+      {
+        "label": "Contact",
+        "action": {
+          "type": "section-link",
+          "label": "Contact",
+          "sectionId": "contact"
+        }
+      }
+    ],
+    "ctaAction": {
+      "type": "open-modal",
+      "label": "Get Started",
+      "modalId": "lead-capture"
+    }
+  },
+  "floatingWhatsapp": {
+    "action": {
+      "type": "external-link",
+      "label": "Chat on WhatsApp",
+      "url": "https://wa.me/918951049082?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Xthrive%20HSR",
+      "newTab": true
+    }
+  },
+  "leadCaptureModal": {
+    "modalId": "lead-capture",
+    "delayMs": 45000,
+    "sectionLabel": "Start Here",
+    "title": "Book your first session.",
+    "text": "Leave your details and the team will get back within a few hours."
+  },
+  "leadForm": {
+    "nameLabel": "Full Name",
+    "phoneLabel": "Phone Number",
+    "interestLabel": "What are you interested in?",
+    "interestPlaceholder": "Select an option",
+    "messageLabel": "Message (optional)",
+    "submitLabel": "Let's Talk",
+    "note": "We reply within a few hours · No spam, no pressure",
+    "successTitle": "You're in.",
+    "successText": "We'll be in touch within a few hours. If it's urgent, WhatsApp us directly.",
+    "successAction": {
+      "type": "external-link",
+      "label": "WhatsApp Us",
+      "url": "https://wa.me/918951049082",
+      "newTab": true
+    },
+    "options": [
+      {
+        "value": "group-classes",
+        "label": "Group Classes"
+      },
+      {
+        "value": "barbell-club",
+        "label": "Saturday Barbell Club"
+      },
+      {
+        "value": "drop-in",
+        "label": "Drop-In Session"
+      },
+      {
+        "value": "enquiry",
+        "label": "General Enquiry"
+      }
+    ]
+  },
+  "hero": {
+    "posterImage": "/image-placeholder.svg",
+    "locationText": "HSR Layout · Bengaluru",
+    "titleLines": [
+      "Strength.",
+      "Community,"
+    ],
+    "accentLine": "Relentless.",
+    "subtitle": "HSR Layout's favourite functional fitness gym",
+    "ratingText": "4.9 on Google · 120+ Reviews",
+    "scrollText": "Scroll to explore",
+    "actions": [
+      {
+        "type": "open-modal",
+        "label": "Get Started",
+        "modalId": "lead-capture"
+      },
+      {
+        "type": "external-link",
+        "label": "Talk to Our Coach",
+        "url": "tel:+918951049082"
+      }
+    ]
+  },
+  "about": {
+    "stats": [
+      {
+        "value": "8",
+        "suffix": "",
+        "label": "Classes / Day"
+      },
+      {
+        "value": "100",
+        "suffix": "+",
+        "label": "Members Transformed"
+      },
+      {
+        "value": "4.9",
+        "suffix": "★",
+        "label": "Google Rating"
+      },
+      {
+        "value": "2",
+        "suffix": "+",
+        "label": "Years in HSR"
+      }
+    ],
+    "sectionLabel": "Our Philosophy",
+    "titleLines": [
+      "Not just a gym.",
+      "A system built",
+      "to change you."
+    ],
+    "paragraphs": [
+      "Xthrive isn't a gym. It's a system — built around group accountability, expert coaching, and functional movement that carries into your real life.",
+      "We don't train bodies. We build people. And we've been doing it in HSR Layout for over 6 years."
+    ],
+    "infoBlocks": [
+      {
+        "title": "What is functional fitness?",
+        "body": "Functional fitness trains movements you actually use — squatting, hinging, pushing, pulling, carrying. The result? You get stronger in the gym and feel it in everything you do outside it. It's not a sport. It's how you train to live better.",
+        "muted": false
+      },
+      {
+        "title": "Do I need experience?",
+        "body": "No. Every class is coached, every movement is scalable. Most of our members walked in with zero experience and stayed because of the results — and the people. If you can show up, we'll handle the rest.",
+        "muted": true
+      }
+    ]
+  },
+  "results": {
+    "sectionLabel": "Proven Results",
+    "titleLines": [
+      "Our Members See",
+      "Incredible Results"
+    ],
+    "intro": "At Xthrive HSR, we're built around one thing — results that compound. Here's what members in HSR Layout consistently report at each stage of their journey.",
+    "cta": {
+      "type": "open-modal",
+      "label": "Start Your Journey →",
+      "modalId": "lead-capture"
+    },
+    "items": [
+      {
+        "top": "DAY",
+        "bottom": "ONE",
+        "description": "Energy lift and mental clarity — you'll leave your first class feeling something you haven't felt in a while."
+      },
+      {
+        "top": "WEEK",
+        "bottom": "ONE",
+        "description": "Movement patterns start clicking. Soreness fades. You start tracking scores and actually wanting to beat them."
+      },
+      {
+        "top": "MONTH",
+        "bottom": "ONE",
+        "description": "Visible changes in strength and endurance. You stop dreading the alarm — the 6am crew is waiting."
+      },
+      {
+        "top": "MONTH",
+        "bottom": "THREE",
+        "description": "Enhanced muscle tone, noticeably better fitness. Your lifts are going up every cycle."
+      },
+      {
+        "top": "MONTH",
+        "bottom": "SIX",
+        "description": "Noticeable improvements in physique and confidence. People around you start asking what you're doing differently."
+      },
+      {
+        "top": "YEAR",
+        "bottom": "ONE",
+        "description": "Transformed body. Transformed habits. New baseline. This is the version of you that existed all along."
+      }
+    ]
+  },
+  "classes": {
+    "sectionLabel": "Our Classes",
+    "titleLines": [
+      "Group",
+      "Classes"
+    ],
+    "intro": "Coach-led, fully programmed, scaled to your level.\n6 class types · 8 sessions daily · HSR Layout, Bangalore.",
+    "quickStats": [
+      {
+        "value": "8",
+        "label": "Classes / Day"
+      },
+      {
+        "value": "6",
+        "label": "Class Types"
+      },
+      {
+        "value": "5:30am",
+        "label": "First Class"
+      }
+    ],
+    "footerText": "Not sure which class is right for you? Our coaches will guide you — book a free drop-in and try it before you commit.",
+    "footerAction": {
+      "type": "open-modal",
+      "label": "Book a Free Drop-In →",
+      "modalId": "lead-capture"
+    },
+    "items": [
+      {
+        "index": "01",
+        "title": "CrossFit",
+        "badgeOne": "Daily · Mon–Sat",
+        "badgeTwo": "Beginner Friendly",
+        "description": "The original group fitness methodology. Every session combines functional movements — squats, pulls, pushes, runs — in constantly varied workouts. Coach-led from warm-up to cool-down. Scales perfectly to your current level, whether it's your first class or your thousandth.",
+        "ctaStyle": "primary",
+        "action": {
+          "type": "open-modal",
+          "label": "Book a Class →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/crossfit_group_classes.png",
+        "alt": "CrossFit group class at Xthrive HSR Layout Bangalore",
+        "featured": false
+      },
+      {
+        "index": "02",
+        "title": "Olympic\nWeightlifting",
+        "badgeOne": "Tue · Thu",
+        "badgeTwo": "Technique Focus",
+        "description": "Snatch. Clean. Jerk. The two most technical movements in strength sports — coached properly. Mechanics before load, always. Whether you're stepping onto a platform for the first time or chasing competition numbers, our Oly sessions build precision that carries over to everything else.",
+        "ctaStyle": "outline",
+        "action": {
+          "type": "open-modal",
+          "label": "Learn More →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/olympic_lifts.jpg",
+        "alt": "Olympic weightlifting class snatch clean jerk Xthrive HSR Bangalore",
+        "featured": false
+      },
+      {
+        "index": "03",
+        "title": "Endurance",
+        "badgeOne": "Mon · Wed · Fri",
+        "badgeTwo": "All Levels",
+        "description": "Build your engine. Running, rowing, assault bike, and structured metabolic conditioning workouts designed to push your aerobic and anaerobic capacity. Not just cardio — purposeful, programmed work that makes everything else feel easier.",
+        "ctaStyle": "outline",
+        "action": {
+          "type": "open-modal",
+          "label": "Learn More →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/endurance_edited.png",
+        "alt": "Endurance training group class at Xthrive HSR Layout Bangalore",
+        "featured": false
+      },
+      {
+        "index": "04",
+        "title": "Strength &\nConditioning",
+        "badgeOne": "Mon · Wed · Fri",
+        "badgeTwo": "All Levels",
+        "description": "Not random heavy lifting — real programming. Squat, press, and deadlift cycles built on progressive overload so your numbers go up week over week. Strength work embedded in every class, tracked over time.",
+        "ctaStyle": "outline",
+        "action": {
+          "type": "open-modal",
+          "label": "Learn More →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/strenght&conditoning.png",
+        "alt": "Strength and conditioning class at Xthrive HSR Layout Bangalore",
+        "featured": false
+      },
+      {
+        "index": "05",
+        "title": "Weight\nTraining",
+        "badgeOne": "Tue · Thu · Sat",
+        "badgeTwo": "All Levels",
+        "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment — programmed for progressive overload without the chaos of a commercial gym floor. Coached, purposeful, and measurable. Ideal for building size, toning, and building base strength.",
+        "ctaStyle": "outline",
+        "action": {
+          "type": "open-modal",
+          "label": "Learn More →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/weight_trainign_edited.png",
+        "alt": "Weight training group class at Xthrive HSR Layout gym Bangalore",
+        "featured": false
+      },
+      {
+        "index": "06",
+        "title": "Saturday\nBarbell Club",
+        "badgeOne": "Every Saturday",
+        "badgeTwo": "6:00 AM · All Levels",
+        "description": "Our most loved class. Every Saturday, a dedicated room of lifters shows up for technique work, heavy cycles, and PR attempts. From your first squat to your heaviest deadlift — this is where the community comes alive.",
+        "ctaStyle": "primary",
+        "action": {
+          "type": "open-modal",
+          "label": "Reserve Your Spot →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/saturday_barbelle_club.png",
+        "alt": "Saturday Barbell Club at Xthrive HSR Layout gym Bangalore",
+        "featured": true
+      }
+    ]
+  },
+  "transformations": {
+    "sectionLabel": "Real Results. Real People.",
+    "titleLines": [
+      "Actual",
+      "Transformations"
+    ],
+    "intro": "Not stock photos. Not curated highlights. These are real people from HSR Layout who walked in and stayed because the results were impossible to ignore.",
+    "cta": {
+      "type": "open-modal",
+      "label": "Start Your Transformation →",
+      "modalId": "lead-capture"
+    },
+    "items": [
+      {
+        "name": "Priya R.",
+        "meta": "10 Months at Xthrive",
+        "body": "I joined on a dare. Never lifted a barbell in my life. In 6 months, I deadlifted 80kg. But the bigger win? I used to dread Mondays. Now I look forward to 6am class. The coaches know your name, they remember your goals. I came for fitness — I stayed because this place became a part of my week I can't imagine removing.",
+        "tag": "80kg Deadlift PR",
+        "image": "/image-placeholder.svg",
+        "alt": "Priya R - Xthrive HSR transformation story"
+      },
+      {
+        "name": "Arjun K.",
+        "meta": "14 Months at Xthrive",
+        "body": "I'd been going to regular gyms for 5 years with nothing to show for it. Three months at Xthrive and I PR'd my squat. The coaching here is on a different level — they actually look at your movement, fix your form, and push you at the right moments. First time I've felt athletic in my life.",
+        "tag": "−12kg · Squat PR",
+        "image": "/image-placeholder.svg",
+        "alt": "Arjun K - strength and conditioning transformation Xthrive HSR"
+      },
+      {
+        "name": "Nisha P.",
+        "meta": "8 Months at Xthrive",
+        "body": "I was terrified the first day — I assumed this was only for people who already knew what they were doing. The coaches made me feel like a complete person, not a beginner who needed to be managed. Six months later I'm doing things I never thought possible. And the 6am crew is genuinely the best part of my week.",
+        "tag": "Beginner → First Pull-Up",
+        "image": "/image-placeholder.svg",
+        "alt": "Nisha P - functional fitness transformation Xthrive HSR Layout"
+      },
+      {
+        "name": "Rohan S.",
+        "meta": "2 Years at Xthrive",
+        "body": "Two years in and I still look forward to every session. The Saturday Barbell Club alone is worth the membership. Coach Sharan's programming is the most thoughtful I've experienced — there's a reason people here get stronger consistently, not randomly. This isn't a gym. It's a proper system.",
+        "tag": "140kg Clean & Jerk",
+        "image": "/image-placeholder.svg",
+        "alt": "Rohan S - barbell club member Xthrive HSR"
+      }
+    ]
+  },
+  "reviews": {
+    "sectionLabel": "What HSR Says",
+    "title": "Rated 4.9 ★ on Google",
+    "intro": "120+ verified reviews from members in HSR Layout, Bengaluru",
+    "googleAction": {
+      "type": "open-modal",
+      "label": "Rated 4.9 ★ on Google · Read all 120+ reviews →",
+      "modalId": "lead-capture"
+    },
+    "items": [
+      {
+        "initial": "R",
+        "name": "Rahul M.",
+        "date": "2 months ago",
+        "color": "#4A8C8C",
+        "body": "Best decision I made this year. The coaches are knowledgeable, the programming is solid, and the community makes you feel like you belong from day one."
+      },
+      {
+        "initial": "S",
+        "name": "Sanya T.",
+        "date": "5 months ago",
+        "color": "#3D7576",
+        "body": "I was completely new to functional fitness and walked in nervous. The coaches are patient, smart about scaling movements, and genuinely invested in your progress. Six months later I'm unrecognisable."
+      },
+      {
+        "initial": "V",
+        "name": "Vikram N.",
+        "date": "1 month ago",
+        "color": "#111111",
+        "body": "The Saturday Barbell Club is worth the membership alone. Coach Sharan's programming is the most thoughtful I've come across. Consistent, progressive, and actually explained. Strength has gone up every cycle."
+      },
+      {
+        "initial": "A",
+        "name": "Ananya R.",
+        "date": "3 months ago",
+        "color": "#4A8C8C",
+        "body": "I've tried 4 gyms in Bangalore over 3 years. Nothing came close to this. It's not just the workouts — it's the way the coaches invest in you. After the first month I stopped looking for anything else."
+      }
+    ]
+  },
+  "community": {
+    "sectionLabel": "Gallery",
+    "titleLines": [
+      "See The Space",
+      "Before You Walk In"
+    ],
+    "paragraphs": [
+      "A quick look at the floor, the training environment, and the atmosphere at Xthrive HSR.",
+      "Swap these images in the codebase whenever you want to refresh the space, classes, or equipment shown here."
+    ],
+    "cta": {
+      "type": "open-modal",
+      "label": "Book A Visit →",
+      "modalId": "lead-capture"
+    },
+    "images": [
+      {
+        "src": "/images/gallery/1.JPG",
+        "alt": "Xthrive HSR training floor"
+      },
+      {
+        "src": "/images/gallery/2.JPG",
+        "alt": "Group class at Xthrive HSR Layout"
+      },
+      {
+        "src": "/images/gallery/4.jpg",
+        "alt": "Saturday barbell club Xthrive Bengaluru"
+      },
+      {
+        "src": "/images/gallery/5.jpg",
+        "alt": "Xthrive HSR gym equipment"
+      },
+      {
+        "src": "/images/gallery/6.jpg",
+        "alt": "Xthrive HSR members training"
+      },
+      {
+        "src": "/images/gallery/7.jpg",
+        "alt": "Xthrive HSR functional fitness class"
+      },
+      {
+        "src": "/images/gallery/8.jpg",
+        "alt": "Xthrive HSR coaching session"
+      },
+      {
+        "src": "/images/gallery/9.jpg",
+        "alt": "Xthrive HSR workout space"
+      },
+      {
+        "src": "/images/gallery/10.jpg",
+        "alt": "Xthrive HSR strength training"
+      },
+      {
+        "src": "/images/gallery/11.jpg",
+        "alt": "Xthrive HSR class atmosphere"
+      },
+      {
+        "src": "/images/gallery/12.jpg",
+        "alt": "Xthrive HSR gym community"
+      },
+      {
+        "src": "/images/gallery/13.jpg",
+        "alt": "Xthrive HSR training session"
+      },
+      {
+        "src": "/images/gallery/14.jpg",
+        "alt": "Xthrive HSR gym floor"
+      },
+      {
+        "src": "/images/gallery/15.jpg",
+        "alt": "Xthrive HSR member workout"
+      },
+      {
+        "src": "/images/gallery/16.png",
+        "alt": "Xthrive HSR facility"
+      },
+      {
+        "src": "/images/gallery/17.png",
+        "alt": "Xthrive HSR group training"
+      },
+      {
+        "src": "/images/gallery/18.jpg",
+        "alt": "Xthrive HSR fitness community"
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Get in Touch",
+    "titleLines": [
+      "Ready to start?",
+      "Let's talk."
+    ],
+    "intro": "We reply within a few hours. No spam, no pressure.",
+    "addressLabel": "Address",
+    "addressCta": {
+      "type": "external-link",
+      "label": "Get Directions →",
+      "url": "https://maps.google.com/?q=4th+Floor,+No.446,+17th+Cross+Rd,+above+HDFC+Bank,+Sector+4,+HSR+Layout,+Bengaluru,+Karnataka+560102",
+      "newTab": true
+    },
+    "phoneLabel": "Phone",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": {
+      "type": "external-link",
+      "label": "Chat with us directly →",
+      "url": "https://wa.me/918951049082",
+      "newTab": true
+    },
+    "hoursLabel": "Class Hours",
+    "hours": [
+      "Mon–Fri: 5:30 AM – 9 PM",
+      "Saturday: 6 AM – 1 PM",
+      "Sunday: 7 AM – 11 AM"
+    ]
+  },
+  "faq": {
+    "sectionLabel": "Got Questions",
+    "titleLines": [
+      "Everything You",
+      "Want to Know"
+    ],
+    "intro": "Straight answers. No gym-bro jargon.",
+    "footerText": "Still have a question?",
+    "footerAction": {
+      "type": "open-modal",
+      "label": "Ask Us on WhatsApp →",
+      "modalId": "lead-capture"
+    },
+    "items": [
+      {
+        "question": "Is Xthrive HSR good for complete beginners?",
+        "answer": "Yes — most of our members started with zero experience. Every class at Xthrive HSR is coached from start to finish, and every movement is scaled to your current ability. You will never be thrown into a workout without a proper briefing and modification. Our coaches introduce you to fundamental movement patterns first, and build from there. If you can show up consistently, we'll handle everything else."
+      },
+      {
+        "question": "What actually happens in a functional fitness class at Xthrive?",
+        "answer": "A typical class runs 60 minutes and has four parts: a structured warm-up, a skill or strength segment (e.g. barbell work, gymnastics), a conditioning workout (the WOD), and a brief cool-down. The coach leads the entire session — you're never left figuring out what to do next. Every workout is written on a board, explained, and demonstrated before you start. Group energy keeps you accountable; coach oversight keeps you safe."
+      },
+      {
+        "question": "How is Xthrive HSR different from a regular gym?",
+        "answer": "At a regular gym, you're on your own — there's no programming, no accountability, and often no one to correct your form. Xthrive provides structured programming, daily coaching, and a community that keeps you showing up. The workouts change every day, are designed progressively across weeks and months, and are led by qualified coaches who know your name and your goals. The result is consistent progress, not random effort. Most members who've tried both say there's no comparison."
+      },
+      {
+        "question": "Is functional fitness the same as CrossFit?",
+        "answer": "Functional fitness is the training methodology; CrossFit is a brand that popularised it. At Xthrive, we use functional fitness principles — barbell strength, gymnastics movements, and metabolic conditioning — with our own programming philosophy built around long-term athlete development. You'll see similar equipment and movement patterns, but the focus is on building you as an athlete over months and years, not just crushing you in a daily workout. Think of it as the philosophy without the brand."
+      },
+      {
+        "question": "Can I try a class before committing to a membership?",
+        "answer": "Yes — we offer drop-in sessions, and we encourage you to try one first. Book a drop-in through WhatsApp or the form on this page. You'll train alongside regular members, be coached exactly as they are, and get a genuine feel for the programming, community, and coaching quality. There's no hard sell at the end. If it's the right fit, you'll know."
+      },
+      {
+        "question": "What should I bring to my first class at Xthrive HSR?",
+        "answer": "Wear comfortable training clothes and flat-soled shoes (cross-trainers or weightlifting shoes are ideal; thick-soled running shoes are less ideal for barbell work). Bring a water bottle and a small towel. All equipment is provided — barbells, plates, pull-up rigs, kettlebells. Arrive 10 minutes before class so the coach can give you a quick briefing before the session starts."
+      },
+      {
+        "question": "Can I train at Xthrive HSR if I have an injury or health condition?",
+        "answer": "Talk to us before your first session. Our coaches are trained to scale and modify movements around most common injuries — knee, shoulder, lower back — and many members train with pre-existing conditions. We'll never push you into a movement that causes pain. That said, always consult your doctor or physiotherapist for medical clearance if you're dealing with a serious condition. Let the coach know when you arrive and they'll take care of the rest."
+      },
+      {
+        "question": "Where exactly is Xthrive HSR located in Bengaluru?",
+        "answer": "Xthrive HSR is located at 4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102. We're easily accessible from the main HSR Layout roads and close to Koramangala and Bellandur. Search 'Xthrive HSR' on Google Maps for turn-by-turn directions, or use the map on this page. If you're having trouble finding us, WhatsApp us directly and we'll guide you in."
+      }
+    ]
+  },
+  "footer": {
+    "brandCopy": "HSR Layout's favourite functional fitness & strength conditioning gym. Rated 4.9★ on Google. Building stronger people since 2018.",
+    "quickLinks": [
+      {
+        "label": "Group Classes",
+        "action": {
+          "type": "section-link",
+          "label": "Group Classes",
+          "sectionId": "services"
+        }
+      },
+      {
+        "label": "Barbell Club",
+        "action": {
+          "type": "section-link",
+          "label": "Barbell Club",
+          "sectionId": "services"
+        }
+      },
+      {
+        "label": "Transformations",
+        "action": {
+          "type": "section-link",
+          "label": "Transformations",
+          "sectionId": "transformations"
+        }
+      },
+      {
+        "label": "Reviews",
+        "action": {
+          "type": "section-link",
+          "label": "Reviews",
+          "sectionId": "reviews"
+        }
+      },
+      {
+        "label": "Gallery",
+        "action": {
+          "type": "section-link",
+          "label": "Gallery",
+          "sectionId": "gallery"
+        }
+      },
+      {
+        "label": "Contact",
+        "action": {
+          "type": "section-link",
+          "label": "Contact",
+          "sectionId": "contact"
+        }
+      }
+    ]
+  }
+}
