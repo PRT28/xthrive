@@ -1158,25 +1158,31 @@
 }
 
 .classText {
+  display: -webkit-box;
   margin: 0 0 1rem;
+  overflow: hidden;
   color: rgb(255 255 255 / 84%);
   font-size: 0.9rem;
   line-height: 1.55;
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(8px);
+  max-height: 2.8rem;
+  opacity: 1;
+  transform: translateY(0);
   transition:
     max-height 0.38s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.22s ease,
     transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .classCard:hover .classText,
 .classCard:focus .classText,
 .classCard:focus-within .classText {
+  display: block;
   max-height: 9rem;
   opacity: 1;
   transform: translateY(0);
+  -webkit-line-clamp: unset;
 }
 
 .classFooter {
@@ -1346,6 +1352,15 @@
   flex-shrink: 0;
 }
 
+.avatarImage {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background: var(--brand-border);
+}
+
 .reviewName {
   color: var(--brand-black);
   font-size: 0.875rem;
@@ -1371,6 +1386,28 @@
   margin: 0.5rem 0 0;
   color: var(--brand-body);
   font-size: 0.875rem;
+}
+
+.reviewTextClamped {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.reviewReadMore {
+  border: 0;
+  padding: 0.5rem 0 0;
+  background: transparent;
+  color: var(--teal);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reviewReadMore:hover {
+  color: var(--brand-black);
 }
 
 .googleLink {
@@ -1423,8 +1460,13 @@
 .communityCell {
   position: relative;
   aspect-ratio: 1;
+  width: 100%;
+  border: 0;
   border-radius: 0.5rem;
   overflow: hidden;
+  padding: 0;
+  background: rgb(255 255 255 / 8%);
+  cursor: zoom-in;
 }
 
 .communityImage {
@@ -1432,6 +1474,140 @@
   height: 100%;
   object-fit: cover;
   opacity: 0.7;
+  transition:
+    opacity 0.2s ease,
+    transform 0.28s ease;
+}
+
+.communityCell:hover .communityImage,
+.communityCell:focus-visible .communityImage {
+  opacity: 0.95;
+  transform: scale(1.04);
+}
+
+.galleryOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.galleryBackdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgb(0 0 0 / 86%);
+  cursor: zoom-out;
+}
+
+.galleryModal {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 4.5rem minmax(0, 1fr) 3.75rem;
+  background: #050505;
+}
+
+.galleryModalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem 0.75rem 1.25rem;
+  border-bottom: 1px solid rgb(255 255 255 / 10%);
+  background: rgb(5 5 5 / 94%);
+}
+
+.galleryCounter {
+  color: rgb(255 255 255 / 78%);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.galleryCarousel {
+  position: relative;
+  min-height: 0;
+}
+
+.galleryImageFrame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 0;
+  background: #050505;
+}
+
+.galleryImageLarge {
+  object-fit: contain;
+}
+
+.galleryClose,
+.galleryNav {
+  position: absolute;
+  z-index: 3;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(17 17 17 / 72%);
+  color: white;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.galleryClose:hover,
+.galleryNav:hover {
+  background: rgb(74 140 140 / 92%);
+  transform: translateY(-1px);
+}
+
+.galleryClose {
+  position: static;
+  flex-shrink: 0;
+}
+
+.galleryNav {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.galleryNav:hover {
+  transform: translateY(calc(-50% - 1px));
+}
+
+.galleryNavPrev {
+  left: 1rem;
+}
+
+.galleryNavNext {
+  right: 1rem;
+}
+
+.galleryMeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.85rem 1.25rem;
+  background: rgb(5 5 5 / 94%);
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.8125rem;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 70%);
+}
+
+.galleryMeta span:last-child {
+  text-align: center;
 }
 
 .galleryMoreWrap {
@@ -1607,6 +1783,14 @@
   color: #d92d20;
   font-size: 0.75rem;
   line-height: 1.35;
+}
+
+.formSubmitError {
+  margin: 0.75rem 0 0;
+  color: #d92d20;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .selectIcon {
@@ -1949,6 +2133,45 @@
     white-space: normal;
     text-align: center;
     padding-inline: 1rem;
+  }
+
+  .communityGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .galleryClose {
+    top: 0.85rem;
+    right: 0.85rem;
+  }
+
+  .galleryNav {
+    top: auto;
+    bottom: 4rem;
+    transform: none;
+  }
+
+  .galleryNav:hover {
+    transform: translateY(-1px);
+  }
+
+  .galleryNavPrev {
+    left: 0.85rem;
+  }
+
+  .galleryNavNext {
+    right: 0.85rem;
+  }
+
+  .galleryMeta {
+    flex-direction: column;
+    gap: 0.25rem;
+    left: 0.85rem;
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+
+  .galleryMeta span:last-child {
+    text-align: left;
   }
 }
 

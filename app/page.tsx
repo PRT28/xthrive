@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar";
 import { HomeEffects } from "@/components/home-effects";
 import { LeadCaptureModal } from "@/components/lead-capture-modal";
 import { ActionLink } from "@/components/action-link";
+import { getGoogleReviews } from "@/lib/google-reviews";
 import {
   AboutSection,
   ClassesSection,
@@ -53,8 +54,11 @@ const faqSchema = {
 const heroVideoId = "NtA-Nhyv_rE";
 const heroVideoUrl = `https://www.youtube-nocookie.com/embed/${heroVideoId}?autoplay=1&mute=1&controls=0&loop=1&playlist=${heroVideoId}&playsinline=1&modestbranding=1&rel=0`;
 
+export const revalidate = 43200;
+
 export default async function HomePage() {
   const content = await readSiteContent<any>();
+  const reviews = await getGoogleReviews(content.reviews);
   const whatsappUrl = new URL(content.site.whatsappAction.url);
   whatsappUrl.search = "";
 
@@ -151,7 +155,7 @@ export default async function HomePage() {
       <AboutSection content={content.about} />
       <ResultsSection content={content.results} />
       <ClassesSection content={content.classes} />
-      <ReviewsSection content={content.reviews} />
+      <ReviewsSection content={reviews} />
       <CommunitySection content={content.community} />
       <ContactSection content={content.contact} leadForm={content.leadForm} site={content.site} />
       <FaqSection content={content.faq} />

@@ -4,6 +4,8 @@ import Image from "next/image";
 import { ActionLink } from "@/components/action-link";
 import { LeadForm } from "@/components/lead-form";
 import { GalleryGrid } from "@/components/home/gallery-grid";
+import { ReviewAvatar } from "@/components/review-avatar";
+import { ReviewText } from "@/components/review-text";
 import styles from "@/components/site.module.css";
 
 export function AboutSection({ content }: { content: any }) {
@@ -309,9 +311,12 @@ export function ReviewsSection({ content }: { content: any }) {
               data-reveal-delay={String(index)}
             >
               <div className={styles.reviewTop}>
-                <div className={styles.avatar} style={{ background: review.color }}>
-                  {review.initial}
-                </div>
+                <ReviewAvatar
+                  name={review.name}
+                  initial={review.initial}
+                  color={review.color}
+                  profilePhotoUrl={review.profilePhotoUrl}
+                />
                 <div>
                   <div className={styles.reviewName}>{review.name}</div>
                   <div className={styles.reviewDate}>{review.date}</div>
@@ -320,8 +325,8 @@ export function ReviewsSection({ content }: { content: any }) {
                   <GoogleIcon />
                 </div>
               </div>
-              <div className={styles.stars}>★★★★★</div>
-              <p className={styles.reviewText}>&quot;{review.body}&quot;</p>
+              <div className={styles.stars}>{"★".repeat(review.rating || 5)}</div>
+              <ReviewText body={review.body} />
             </article>
           ))}
         </div>
@@ -389,7 +394,7 @@ export function ContactSection({ content, leadForm, site }: { content: any; lead
 
         <div className={styles.contactGrid}>
           <div className={styles.contactCard} data-reveal data-reveal-state="hidden">
-            <LeadForm content={leadForm} whatsappUrl={whatsappUrl.toString()} />
+            <LeadForm content={leadForm} whatsappUrl={whatsappUrl.toString()} source="contact-section" />
           </div>
 
           <div className={styles.contactInfoColumn} data-reveal data-reveal-state="hidden" data-reveal-delay="1">

@@ -12,6 +12,7 @@ type FormState = {
 };
 
 type FormErrors = Partial<Record<keyof FormState, string>>;
+type SubmitStatus = "idle" | "saving" | "submitted";
 
 const initialState: FormState = {
   name: "",
@@ -41,39 +42,59 @@ const validateForm = (form: FormState): FormErrors => {
 export function LeadForm({
   content,
   whatsappUrl,
+  source = "website",
   onSuccess,
 }: {
   content: any;
   whatsappUrl: string;
+  source?: string;
   onSuccess?: () => void;
 }) {
   const [form, setForm] = useState<FormState>(initialState);
   const [errors, setErrors] = useState<FormErrors>({});
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<SubmitStatus>("idle");
+  const [submitError, setSubmitError] = useState("");
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const nextErrors = validateForm(form);
     setErrors(nextErrors);
+    setSubmitError("");
 
     if (Object.keys(nextErrors).length > 0) {
       return;
     }
 
-    setSubmitted(true);
+    setStatus("saving");
+
+    try {
+      const response = await fetch("/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...form,
+          source,
+          page: window.location.href,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Lead save failed.");
+      }
+    } catch {
+      setStatus("idle");
+      setSubmitError(content.errorText || "We couldn't save your details. Please try again or WhatsApp us directly.");
+      return;
+    }
+
+    setStatus("submitted");
     onSuccess?.();
-
-    const msg = encodeURIComponent(
-      `Hi, I'm ${form.name}. I filled the form on your website and I'm interested in: ${form.interest}. My phone is ${form.phone}. ${form.message ? `Message: ${form.message}.` : ""}`,
-    );
-
-    window.setTimeout(() => {
-      window.open(`${whatsappUrl}?text=${msg}`, "_blank", "noopener,noreferrer");
-    }, 800);
   };
 
-  if (submitted) {
+  if (status === "submitted") {
     return (
       <div className={styles.formSuccess}>
         <div className={styles.successIconWrap}>
@@ -167,9 +188,10 @@ export function LeadForm({
         />
 
         <div>
-          <button type="submit" className={`${styles.btnPrimary} ${styles.formSubmit}`}>
-            {content.submitLabel}
+          <button type="submit" className={`${styles.btnPrimary} ${styles.formSubmit}`} disabled={status === "saving"}>
+            {status === "saving" ? content.savingLabel || "Saving..." : content.submitLabel}
           </button>
+          {submitError ? <p className={styles.formSubmitError}>{submitError}</p> : null}
           <p className={styles.formNote}>{content.note}</p>
         </div>
       </div>

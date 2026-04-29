@@ -102,6 +102,8 @@
     "interestPlaceholder": "Select an option",
     "messageLabel": "Message (optional)",
     "submitLabel": "Let's Talk",
+    "savingLabel": "Saving...",
+    "errorText": "We couldn't save your details. Please try again or WhatsApp us directly.",
     "note": "We reply within a few hours · No spam, no pressure",
     "successTitle": "You're in.",
     "successText": "We'll be in touch within a few hours. If it's urgent, WhatsApp us directly.",

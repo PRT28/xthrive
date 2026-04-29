@@ -104,7 +104,7 @@ export function LeadCaptureModal({
           <p className={styles.leadCaptureText}>{content.text}</p>
         </div>
 
-        <LeadForm content={leadForm} whatsappUrl={whatsappUrl} onSuccess={handleSuccess} />
+        <LeadForm content={leadForm} whatsappUrl={whatsappUrl} source="lead-capture-modal" onSuccess={handleSuccess} />
       </div>
     </div>
   );
