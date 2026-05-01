@@ -265,34 +265,34 @@
     "items": [
       {
         "index": "01",
-        "title": "MOBILITY",
-        "badgeOne": "Daily · Mon–Sat",
-        "badgeTwo": "Beginner Friendly",
-        "description": "Unlock your body's hidden potential. We train joints through controlled internal and external rotations, end-range strength, and activation work. This is the lever to resolve common neck, hips and back issues, while building stronger, more efficient movement.",
-        "ctaStyle": "primary",
-        "action": {
-          "type": "open-modal",
-          "label": "Book a Class →",
-          "modalId": "lead-capture"
-        },
-        "image": "/images/group_classes/mobility_edited.png",
-        "alt": "Mobility group class at Xthrive HSR Layout Bangalore",
-        "featured": false
-      },
-      {
-        "index": "02",
-        "title": "Olympic Weightlifting",
-        "badgeOne": "Tue · Thu",
-        "badgeTwo": "Technique Focus",
-        "description": "Snatch. Clean. Jerk. The most technical lifts in strength sports, coached frame by frame at our HSR Layout gym. Mechanics before load, always. Whether it's your first barbell or your first competition, our Oly sessions build precision that carries into every lift you'll ever attempt.",
+        "title": "Strength & Conditioning",
+        "badgeOne": "Mon · Wed · Fri",
+        "badgeTwo": "All Levels",
+        "description": "Not random heavy lifting. Real programming. Squat, press, and deadlift cycles built on progressive overload, so your numbers climb week over week. Strength work embedded in every class at our HSR Layout gym, coached with intent and tracked over time.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
           "label": "Learn More →",
           "modalId": "lead-capture"
         },
-        "image": "/images/group_classes/olympic_lifts.jpg",
-        "alt": "Olympic weightlifting class snatch clean jerk Xthrive HSR Bangalore",
+        "image": "/images/group_classes/strenght&conditoning.png",
+        "alt": "Strength and conditioning class at Xthrive HSR Layout Bangalore",
+        "featured": false
+      },
+      {
+        "index": "02",
+        "title": "Weight Training",
+        "badgeOne": "Tue · Thu · Sat",
+        "badgeTwo": "All Levels",
+        "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment, programmed for progressive overload without the chaos of a commercial gym floor in HSR Layout. Coached, purposeful, and measurable. Built for adding size, sharpening muscle tone, and laying the base strength everything else stands on.",
+        "ctaStyle": "outline",
+        "action": {
+          "type": "open-modal",
+          "label": "Learn More →",
+          "modalId": "lead-capture"
+        },
+        "image": "/images/group_classes/weight_trainign_edited.png",
+        "alt": "Weight training group class at Xthrive HSR Layout gym Bangalore",
         "featured": false
       },
       {
@@ -313,34 +313,34 @@
       },
       {
         "index": "04",
-        "title": "Strength & Conditioning",
-        "badgeOne": "Mon · Wed · Fri",
-        "badgeTwo": "All Levels",
-        "description": "Not random heavy lifting. Real programming. Squat, press, and deadlift cycles built on progressive overload, so your numbers climb week over week. Strength work embedded in every class at our HSR Layout gym, coached with intent and tracked over time.",
+        "title": "Olympic Weightlifting",
+        "badgeOne": "Tue · Thu",
+        "badgeTwo": "Technique Focus",
+        "description": "Snatch. Clean. Jerk. The most technical lifts in strength sports, coached frame by frame at our HSR Layout gym. Mechanics before load, always. Whether it's your first barbell or your first competition, our Oly sessions build precision that carries into every lift you'll ever attempt.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
           "label": "Learn More →",
           "modalId": "lead-capture"
         },
-        "image": "/images/group_classes/strenght&conditoning.png",
-        "alt": "Strength and conditioning class at Xthrive HSR Layout Bangalore",
+        "image": "/images/group_classes/olympic_lifts.jpg",
+        "alt": "Olympic weightlifting class snatch clean jerk Xthrive HSR Bangalore",
         "featured": false
       },
       {
         "index": "05",
-        "title": "Weight Training",
-        "badgeOne": "Tue · Thu · Sat",
-        "badgeTwo": "All Levels",
-        "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment, programmed for progressive overload without the chaos of a commercial gym floor in HSR Layout. Coached, purposeful, and measurable. Built for adding size, sharpening muscle tone, and laying the base strength everything else stands on.",
-        "ctaStyle": "outline",
+        "title": "MOBILITY",
+        "badgeOne": "Daily · Mon–Sat",
+        "badgeTwo": "Beginner Friendly",
+        "description": "Unlock your body's hidden potential. We train joints through controlled internal and external rotations, end-range strength, and activation work. This is the lever to resolve common neck, hips and back issues, while building stronger, more efficient movement.",
+        "ctaStyle": "primary",
         "action": {
           "type": "open-modal",
-          "label": "Learn More →",
+          "label": "Book a Class →",
           "modalId": "lead-capture"
         },
-        "image": "/images/group_classes/weight_trainign_edited.png",
-        "alt": "Weight training group class at Xthrive HSR Layout gym Bangalore",
+        "image": "/images/group_classes/mobility_edited.png",
+        "alt": "Mobility group class at Xthrive HSR Layout Bangalore",
         "featured": false
       },
       {
