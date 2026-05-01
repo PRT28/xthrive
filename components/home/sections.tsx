@@ -157,7 +157,9 @@ export function ClassesSection({ content }: { content: any }) {
             {content.quickStats.map((item: any) => (
               <div key={item.label} className={styles.quickStat}>
                 <strong>{item.value}</strong>
-                <span>{item.label}</span>
+                <span className={item.label === "First Class" ? styles.quickStatFirstClass : undefined}>
+                  {item.label}
+                </span>
               </div>
             ))}
           </div>

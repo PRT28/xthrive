@@ -632,7 +632,6 @@
   color: white;
   font-family: var(--font-host-grotesk);
   font-size: clamp(1rem, 6vw, 2.5rem);
-  line-height: 1;
   font-weight: 400;
 }
 
@@ -644,7 +643,7 @@
 
 .statStar {
   color: var(--google-yellow);
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 900;
 }
 
@@ -723,7 +722,7 @@
 .communityTitle {
   margin: 0;
   font-family: var(--font-host-grotesk);
-  line-height: 0.96;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   font-weight: 400;
 }
@@ -961,6 +960,10 @@
   text-align: center;
 }
 
+.quickStatFirstClass {
+  max-width: none;
+}
+
 .quickStatSuffix {
   font-size: 1rem;
 }
@@ -1094,7 +1097,7 @@
   border: 1px solid rgb(255 255 255 / 18%);
 
   backdrop-filter: blur(2.5px);
-  background: #FFFFFFCC;
+  background: linear-gradient(#ffffff0f 0%, #c4f4e900 100%), linear-gradient(#4a8c8c00 0%, #091b1b12 100%);
 }
 
 .classBody > * {
@@ -1168,7 +1171,7 @@
 
 .classTitle {
   margin: 0 0 0.5rem;
-  color: #0F172A;
+  color: rgb(255 255 255 / 84%);
   font-size: 24px;
   line-height: 1.05;
   font-weight: 500;
@@ -1178,7 +1181,7 @@
   display: -webkit-box;
   margin: 0 0 1rem;
   overflow: hidden;
-  color: #0F172A;
+  color: rgb(255 255 255 / 84%);
   font-size: 0.9rem;
   line-height: 1.55;
   max-height: 2.8rem;
@@ -1196,7 +1199,7 @@
 .classCard:focus .classText,
 .classCard:focus-within .classText {
   display: block;
-  max-height: 9rem;
+  max-height: 10rem;
   opacity: 1;
   transform: translateY(0);
   -webkit-line-clamp: unset;
@@ -2155,6 +2158,12 @@
     white-space: normal;
     text-align: center;
     padding-inline: 1rem;
+  }
+
+  .quickStatFirstClass {
+    max-width: 5ch;
+    line-height: 1.15;
+    white-space: normal;
   }
 
   .communityGrid {

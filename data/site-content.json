@@ -44,14 +44,6 @@
         }
       },
       {
-        "label": "Transformations",
-        "action": {
-          "type": "section-link",
-          "label": "Transformations",
-          "sectionId": "transformations"
-        }
-      },
-      {
         "label": "Reviews",
         "action": {
           "type": "section-link",
@@ -590,7 +582,7 @@
     "items": [
       {
         "question": "What is Xthrive HSR Layout?",
-        "answer": "Xthrive is a strength and conditioning gym in HSR Layout, Bengaluru, built around coached group classes, functional fitness programming, calisthenics, Olympic weightlifting, and long-term athlete development. We've trained members in HSR for over 6 years, from complete beginners to competitive lifters. Every class is led by a qualified coach, every movement is scalable, and every program is designed to make you stronger, fitter, and more capable for life outside the gym."
+        "answer": "Xthrive is a strength and conditioning gym in HSR Layout, Bengaluru, built around coached group classes, functional fitness programming, calisthenics, Olympic weightlifting, and long-term athlete development. We've trained members in HSR for over 2 years, from complete beginners to competitive lifters. Every class is led by a qualified coach, every movement is scalable, and every program is designed to make you stronger, fitter, and more capable for life outside the gym."
       },
       {
         "question": "Is Xthrive good for complete beginners?",
