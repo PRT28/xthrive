@@ -9,6 +9,8 @@ export type SiteAction =
       label: string;
       url: string;
       newTab?: boolean;
+      requiresLeadCapture?: boolean;
+      leadCaptureModalId?: string;
     }
   | {
       type: "section-link";

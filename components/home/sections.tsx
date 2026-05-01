@@ -205,7 +205,6 @@ export function ClassesSection({ content }: { content: any }) {
                 </div>
 
                 <div className={styles.classBody}>
-                  {item.featured ? <div className={styles.classKicker}>Signature Weekend Session</div> : null}
                   <h3 className={styles.classTitle}>
                     {item.title.split("\n").map((line: string) => (
                       <span key={line}>

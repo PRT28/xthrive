@@ -1,7 +1,26 @@
 import type { Metadata, Viewport } from "next";
+import { Chivo_Mono, Host_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 
 const siteUrl = "https://xthrive.in/";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const hostGrotesk = Host_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-host-grotesk",
+  display: "swap",
+});
+
+const chivoMono = Chivo_Mono({
+  subsets: ["latin"],
+  variable: "--font-chivo-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -66,7 +85,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`${inter.variable} ${hostGrotesk.variable} ${chivoMono.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

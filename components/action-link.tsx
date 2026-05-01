@@ -29,6 +29,25 @@ export function ActionLink({ action, className, children, ariaLabel, onClick }: 
     onClick?.();
   };
 
+  const handleExternalClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (action.type !== "external-link" || !action.requiresLeadCapture) {
+      onClick?.();
+      return;
+    }
+
+    event.preventDefault();
+
+    window.dispatchEvent(
+      new CustomEvent("xthrive:open-modal", {
+        detail: {
+          modalId: action.leadCaptureModalId ?? "lead-capture",
+          redirectUrl: action.url,
+        },
+      }),
+    );
+    onClick?.();
+  };
+
   if (action.type === "open-modal") {
     return (
       <button type="button" className={className} aria-label={ariaLabel} onClick={handleModalClick}>
@@ -50,7 +69,7 @@ export function ActionLink({ action, className, children, ariaLabel, onClick }: 
       href={action.url}
       className={className}
       aria-label={ariaLabel}
-      onClick={onClick}
+      onClick={handleExternalClick}
       target={action.newTab ? "_blank" : undefined}
       rel={action.newTab ? "noopener noreferrer" : undefined}
     >

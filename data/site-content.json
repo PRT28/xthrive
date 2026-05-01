@@ -16,7 +16,9 @@
       "type": "external-link",
       "label": "Instagram",
       "url": "https://www.instagram.com/xthrive.hsr?igsh=MTB0NWF5c3hpY3Y4ZA==",
-      "newTab": true
+      "newTab": true,
+      "requiresLeadCapture": true,
+      "leadCaptureModalId": "lead-capture"
     },
     "linkedinAction": {
       "type": "external-link",
@@ -249,8 +251,7 @@
   "classes": {
     "sectionLabel": "Our Classes",
     "titleLines": [
-      "Group",
-      "Classes"
+      "Group Classes"
     ],
     "intro": "",
     "quickStats": [
@@ -292,7 +293,7 @@
       },
       {
         "index": "02",
-        "title": "Olympic\nWeightlifting",
+        "title": "Olympic Weightlifting",
         "badgeOne": "Tue · Thu",
         "badgeTwo": "Technique Focus",
         "description": "Snatch. Clean. Jerk. The most technical lifts in strength sports, coached frame by frame at our HSR Layout gym. Mechanics before load, always. Whether it's your first barbell or your first competition, our Oly sessions build precision that carries into every lift you'll ever attempt.",
@@ -324,7 +325,7 @@
       },
       {
         "index": "04",
-        "title": "Strength &\nConditioning",
+        "title": "Strength & Conditioning",
         "badgeOne": "Mon · Wed · Fri",
         "badgeTwo": "All Levels",
         "description": "Not random heavy lifting. Real programming. Squat, press, and deadlift cycles built on progressive overload, so your numbers climb week over week. Strength work embedded in every class at our HSR Layout gym, coached with intent and tracked over time.",
@@ -340,7 +341,7 @@
       },
       {
         "index": "05",
-        "title": "Weight\nTraining",
+        "title": "Weight Training",
         "badgeOne": "Tue · Thu · Sat",
         "badgeTwo": "All Levels",
         "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment, programmed for progressive overload without the chaos of a commercial gym floor in HSR Layout. Coached, purposeful, and measurable. Built for adding size, sharpening muscle tone, and laying the base strength everything else stands on.",
@@ -356,7 +357,7 @@
       },
       {
         "index": "06",
-        "title": "Saturday\nBarbell Club",
+        "title": "Saturday Barbell Club",
         "badgeOne": "Every Saturday",
         "badgeTwo": "6:00 AM · All Levels",
         "description": "Our most loved class. Every Saturday, a dedicated room of lifters shows up for technique work, heavy cycles, and PR attempts. From your first squat to your heaviest deadlift, this is where the strongest community in HSR Layout comes alive.",

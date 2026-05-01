@@ -17,6 +17,7 @@ export function LeadCaptureModal({
   whatsappUrl: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [redirectUrl, setRedirectUrl] = useState<string | null>(null);
 
   useEffect(() => {
     return;
@@ -24,9 +25,10 @@ export function LeadCaptureModal({
 
   useEffect(() => {
     const handleOpen = (event: Event) => {
-      const customEvent = event as CustomEvent<{ modalId?: string }>;
+      const customEvent = event as CustomEvent<{ modalId?: string; redirectUrl?: string }>;
 
       if (customEvent.detail?.modalId === content.modalId) {
+        setRedirectUrl(customEvent.detail.redirectUrl ?? null);
         setIsOpen(true);
       }
     };
@@ -72,11 +74,16 @@ export function LeadCaptureModal({
 
   const close = () => {
     window.sessionStorage.setItem(DISMISSED_KEY, "true");
+    setRedirectUrl(null);
     setIsOpen(false);
   };
 
   const handleSuccess = () => {
     window.sessionStorage.setItem(SUBMITTED_KEY, "true");
+
+    if (redirectUrl) {
+      window.location.assign(redirectUrl);
+    }
   };
 
   if (!isOpen) {
@@ -104,7 +111,12 @@ export function LeadCaptureModal({
           <p className={styles.leadCaptureText}>{content.text}</p>
         </div>
 
-        <LeadForm content={leadForm} whatsappUrl={whatsappUrl} source="lead-capture-modal" onSuccess={handleSuccess} />
+        <LeadForm
+          content={leadForm}
+          whatsappUrl={whatsappUrl}
+          source={redirectUrl ? "instagram-gated-link" : "lead-capture-modal"}
+          onSuccess={handleSuccess}
+        />
       </div>
     </div>
   );
