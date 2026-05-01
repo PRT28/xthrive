@@ -186,18 +186,17 @@
       "to change you."
     ],
     "paragraphs": [
-      "Xthrive isn't a gym. It's a system — built around group accountability, expert coaching, and functional movement that carries into your real life.",
-      "We don't train bodies. We build people. And we've been doing it in HSR Layout for over 6 years."
+      "Xthrive isn't another gym in HSR Layout. It's a strength and conditioning system, built around accountability, expert coaching, and functional movement that carries into your real life.We don't train bodies. We build people. And we've been doing it in HSR Layout for over 2 years."
     ],
     "infoBlocks": [
       {
         "title": "What is functional fitness?",
-        "body": "Functional fitness trains movements you actually use — squatting, hinging, pushing, pulling, carrying. The result? You get stronger in the gym and feel it in everything you do outside it. It's not a sport. It's how you train to live better.",
+        "body": "Functional fitness trains the movements you actually use. Squatting, hinging, pushing, pulling, carrying. The result? You get stronger inside the gym and feel it in everything you do outside it. It isn't a sport. It's how you train to live better.",
         "muted": false
       },
       {
         "title": "Do I need experience?",
-        "body": "No. Every class is coached, every movement is scalable. Most of our members walked in with zero experience and stayed because of the results — and the people. If you can show up, we'll handle the rest.",
+        "body": "No. Every class is coached and every movement scales to your level, whether it's your first session or your thousandth. Most of our members walked in with zero background and stayed for the results. If you can show up, we'll handle the rest.",
         "muted": true
       }
     ]
@@ -233,17 +232,17 @@
       {
         "top": "MONTH",
         "bottom": "THREE",
-        "description": "Enhanced muscle tone, noticeably better fitness. Your lifts are going up every cycle."
+        "description": "Enhanced muscle tone, noticeably better fitness. Your lifts are going up every cycle, and you're starting to feel which muscles are firing on every rep."
       },
       {
         "top": "MONTH",
         "bottom": "SIX",
-        "description": "Noticeable improvements in physique and confidence. People around you start asking what you're doing differently."
+        "description": "Noticeable improvements in physique and confidence. The mind-muscle connection is sharp now. You move with awareness, your body responds before you think, and people around you start asking what you're doing differently."
       },
       {
         "top": "YEAR",
         "bottom": "ONE",
-        "description": "Transformed body. Transformed habits. New baseline. This is the version of you that existed all along."
+        "description": "Transformed body. Transformed habits. New baseline. Deep awareness of how your body moves, recovers, and performs. This is the version of you that existed all along."
       }
     ]
   },
@@ -277,10 +276,10 @@
     "items": [
       {
         "index": "01",
-        "title": "CrossFit",
+        "title": "MOBILITY",
         "badgeOne": "Daily · Mon–Sat",
         "badgeTwo": "Beginner Friendly",
-        "description": "The original group fitness methodology. Every session combines functional movements — squats, pulls, pushes, runs — in constantly varied workouts. Coach-led from warm-up to cool-down. Scales perfectly to your current level, whether it's your first class or your thousandth.",
+        "description": "Unlock your body's hidden potential. We train joints through controlled internal and external rotations, end-range strength, and activation work. This is the lever to resolve common neck, hips and back issues, while building stronger, more efficient movement.",
         "ctaStyle": "primary",
         "action": {
           "type": "open-modal",
@@ -288,7 +287,7 @@
           "modalId": "lead-capture"
         },
         "image": "/images/group_classes/crossfit_group_classes.png",
-        "alt": "CrossFit group class at Xthrive HSR Layout Bangalore",
+        "alt": "Mobility group class at Xthrive HSR Layout Bangalore",
         "featured": false
       },
       {
@@ -296,7 +295,7 @@
         "title": "Olympic\nWeightlifting",
         "badgeOne": "Tue · Thu",
         "badgeTwo": "Technique Focus",
-        "description": "Snatch. Clean. Jerk. The two most technical movements in strength sports — coached properly. Mechanics before load, always. Whether you're stepping onto a platform for the first time or chasing competition numbers, our Oly sessions build precision that carries over to everything else.",
+        "description": "Snatch. Clean. Jerk. The most technical lifts in strength sports, coached frame by frame at our HSR Layout gym. Mechanics before load, always. Whether it's your first barbell or your first competition, our Oly sessions build precision that carries into every lift you'll ever attempt.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
@@ -312,7 +311,7 @@
         "title": "Endurance",
         "badgeOne": "Mon · Wed · Fri",
         "badgeTwo": "All Levels",
-        "description": "Build your engine. Running, rowing, assault bike, and structured metabolic conditioning workouts designed to push your aerobic and anaerobic capacity. Not just cardio — purposeful, programmed work that makes everything else feel easier.",
+        "description": "Running, rowing, assault bike, and structured metabolic conditioning that pushes aerobic and anaerobic capacity. Not random cardio. Programmed work, coached intent, the kind of fitness that makes the stairs, the trek, and life feel easier.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
@@ -328,7 +327,7 @@
         "title": "Strength &\nConditioning",
         "badgeOne": "Mon · Wed · Fri",
         "badgeTwo": "All Levels",
-        "description": "Not random heavy lifting — real programming. Squat, press, and deadlift cycles built on progressive overload so your numbers go up week over week. Strength work embedded in every class, tracked over time.",
+        "description": "Not random heavy lifting. Real programming. Squat, press, and deadlift cycles built on progressive overload, so your numbers climb week over week. Strength work embedded in every class at our HSR Layout gym, coached with intent and tracked over time.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
@@ -344,7 +343,7 @@
         "title": "Weight\nTraining",
         "badgeOne": "Tue · Thu · Sat",
         "badgeTwo": "All Levels",
-        "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment — programmed for progressive overload without the chaos of a commercial gym floor. Coached, purposeful, and measurable. Ideal for building size, toning, and building base strength.",
+        "description": "Structured hypertrophy and general strength work. Barbells, dumbbells, and functional equipment, programmed for progressive overload without the chaos of a commercial gym floor in HSR Layout. Coached, purposeful, and measurable. Built for adding size, sharpening muscle tone, and laying the base strength everything else stands on.",
         "ctaStyle": "outline",
         "action": {
           "type": "open-modal",
@@ -360,7 +359,7 @@
         "title": "Saturday\nBarbell Club",
         "badgeOne": "Every Saturday",
         "badgeTwo": "6:00 AM · All Levels",
-        "description": "Our most loved class. Every Saturday, a dedicated room of lifters shows up for technique work, heavy cycles, and PR attempts. From your first squat to your heaviest deadlift — this is where the community comes alive.",
+        "description": "Our most loved class. Every Saturday, a dedicated room of lifters shows up for technique work, heavy cycles, and PR attempts. From your first squat to your heaviest deadlift, this is where the strongest community in HSR Layout comes alive.",
         "ctaStyle": "primary",
         "action": {
           "type": "open-modal",
@@ -467,7 +466,7 @@
       "Before You Walk In"
     ],
     "paragraphs": [
-      "A quick look at the floor, the training environment, and the atmosphere at Xthrive HSR."
+      "A real look inside Xthrive HSR Layout. The training floor, the rigs, the room you'll lift in."
     ],
     "cta": {
       "type": "open-modal",
@@ -477,71 +476,71 @@
     "images": [
       {
         "src": "/images/gallery/1.JPG",
-        "alt": "Xthrive HSR training floor"
+        "alt": "Cardio and conditioning zone at Xthrive HSR Layout with assault bikes, rower, and treadmill for metabolic workouts."
       },
       {
         "src": "/images/gallery/2.JPG",
-        "alt": "Group class at Xthrive HSR Layout"
+        "alt": "Olympic barbells and bumper plates at Xthrive HSR Layout, with the daily strength and conditioning programming whiteboard."
       },
       {
         "src": "/images/gallery/4.jpg",
-        "alt": "Saturday barbell club Xthrive Bengaluru"
+        "alt": "One-on-one deadlift coaching at Xthrive strength and conditioning gym in HSR Layout, Bengaluru."
       },
       {
         "src": "/images/gallery/5.jpg",
-        "alt": "Xthrive HSR gym equipment"
+        "alt": "The Xthrive community in HSR Layout, members of all levels training together at Bengaluru's strength and conditioning gym."
       },
       {
         "src": "/images/gallery/6.jpg",
-        "alt": "Xthrive HSR members training"
+        "alt": "Functional fitness sled push at Xthrive HSR Layout, building real-world strength and conditioning."
       },
       {
         "src": "/images/gallery/7.jpg",
-        "alt": "Xthrive HSR functional fitness class"
+        "alt": "Member training with bumper plates beside the Xthrive logo wall at the HSR Layout gym in Bengaluru."
       },
       {
         "src": "/images/gallery/8.jpg",
-        "alt": "Xthrive HSR coaching session"
+        "alt": "Members holding plyo box pike positions at Xthrive HSR Layout, building shoulder strength and mobility."
       },
       {
         "src": "/images/gallery/9.jpg",
-        "alt": "Xthrive HSR workout space"
+        "alt": "Dead hangs on the pull-up rig at Xthrive HSR Layout gym, scalable for beginners and advanced athletes."
       },
       {
         "src": "/images/gallery/10.jpg",
-        "alt": "Xthrive HSR strength training"
+        "alt": "Calisthenics parallette training at Xthrive HSR Layout, building bodyweight strength and control."
       },
       {
         "src": "/images/gallery/11.jpg",
-        "alt": "Xthrive HSR class atmosphere"
+        "alt": "Gymnastic ring training at Xthrive HSR Layout, the strength and conditioning gym for all levels in Bengaluru."
       },
       {
         "src": "/images/gallery/12.jpg",
-        "alt": "Xthrive HSR gym community"
+        "alt": "Coached handstand practice at Xthrive HSR Layout, calisthenics and skill work for every level."
       },
       {
         "src": "/images/gallery/13.jpg",
-        "alt": "Xthrive HSR training session"
+        "alt": "Farmer's carry and sled training at Xthrive HSR Layout, functional fitness that builds real-world strength."
       },
       {
         "src": "/images/gallery/14.jpg",
-        "alt": "Xthrive HSR gym floor"
+        "alt": "Heavy sled push conditioning at Xthrive HSR Layout, the strength and conditioning gym in Bengaluru."
       },
       {
         "src": "/images/gallery/15.jpg",
-        "alt": "Xthrive HSR member workout"
+        "alt": "Rope climb training at Xthrive HSR Layout gym, building grip strength and full-body conditioning."
       },
       {
         "src": "/images/gallery/16.png",
-        "alt": "Xthrive HSR facility"
+        "alt": "The training floor at Xthrive HSR Layout, Bengaluru's premium strength and conditioning gym."
       },
       {
         "src": "/images/gallery/17.png",
-        "alt": "Xthrive HSR group training"
+        "alt": "Coached back squat at Xthrive HSR Layout, strength training programmed with progressive overload."
       },
       {
         "src": "/images/gallery/18.jpg",
-        "alt": "Xthrive HSR fitness community"
+        "alt": "Rower and assault bike conditioning class at Xthrive HSR Layout, coached metabolic training for all levels."
       }
     ]
   },
@@ -589,36 +588,64 @@
     },
     "items": [
       {
-        "question": "Is Xthrive HSR good for complete beginners?",
-        "answer": "Yes — most of our members started with zero experience. Every class at Xthrive HSR is coached from start to finish, and every movement is scaled to your current ability. You will never be thrown into a workout without a proper briefing and modification. Our coaches introduce you to fundamental movement patterns first, and build from there. If you can show up consistently, we'll handle everything else."
+        "question": "What is Xthrive HSR Layout?",
+        "answer": "Xthrive is a strength and conditioning gym in HSR Layout, Bengaluru, built around coached group classes, functional fitness programming, calisthenics, Olympic weightlifting, and long-term athlete development. We've trained members in HSR for over 6 years, from complete beginners to competitive lifters. Every class is led by a qualified coach, every movement is scalable, and every program is designed to make you stronger, fitter, and more capable for life outside the gym."
       },
       {
-        "question": "What actually happens in a functional fitness class at Xthrive?",
-        "answer": "A typical class runs 60 minutes and has four parts: a structured warm-up, a skill or strength segment (e.g. barbell work, gymnastics), a conditioning workout (the WOD), and a brief cool-down. The coach leads the entire session — you're never left figuring out what to do next. Every workout is written on a board, explained, and demonstrated before you start. Group energy keeps you accountable; coach oversight keeps you safe."
-      },
-      {
-        "question": "How is Xthrive HSR different from a regular gym?",
-        "answer": "At a regular gym, you're on your own — there's no programming, no accountability, and often no one to correct your form. Xthrive provides structured programming, daily coaching, and a community that keeps you showing up. The workouts change every day, are designed progressively across weeks and months, and are led by qualified coaches who know your name and your goals. The result is consistent progress, not random effort. Most members who've tried both say there's no comparison."
+        "question": "Is Xthrive good for complete beginners?",
+        "answer": "Yes. Most of our members started with zero gym experience. Every class at Xthrive HSR Layout is coached from start to finish, every movement is scaled to your current ability, and you'll never be thrown into a workout without a proper briefing. Our coaches introduce you to fundamental movement patterns first (squat, hinge, push, pull, carry), then build from there across functional fitness, strength training, and calisthenics. If you can show up consistently, we'll handle everything else."
       },
       {
         "question": "Is functional fitness the same as CrossFit?",
-        "answer": "Functional fitness is the training methodology; CrossFit is a brand that popularised it. At Xthrive, we use functional fitness principles — barbell strength, gymnastics movements, and metabolic conditioning — with our own programming philosophy built around long-term athlete development. You'll see similar equipment and movement patterns, but the focus is on building you as an athlete over months and years, not just crushing you in a daily workout. Think of it as the philosophy without the brand."
+        "answer": "Functional fitness is the training methodology. CrossFit is the brand that popularised it. At Xthrive, we use functional fitness principles (barbell strength, gymnastics and calisthenics movements, metabolic conditioning) with our own programming philosophy built around long-term athlete development. You'll see similar equipment and movement patterns, but the focus is on building you as an athlete over months and years, not crushing you in a single daily workout. Think of it as the methodology without the brand label."
       },
       {
-        "question": "Can I try a class before committing to a membership?",
-        "answer": "Yes — we offer drop-in sessions, and we encourage you to try one first. Book a drop-in through WhatsApp or the form on this page. You'll train alongside regular members, be coached exactly as they are, and get a genuine feel for the programming, community, and coaching quality. There's no hard sell at the end. If it's the right fit, you'll know."
+        "question": "What happens in a typical functional fitness class?",
+        "answer": "A typical class runs 60 minutes and has four parts: a structured warm-up, a skill or strength segment (barbell work, calisthenics, or gymnastics), a conditioning workout (the WOD), and a brief cool-down. The coach leads the entire session, so you're never left figuring out what to do next. Every workout is written on the board, explained, and demonstrated before you start. Group energy keeps you accountable. Coach oversight keeps you safe."
       },
       {
-        "question": "What should I bring to my first class at Xthrive HSR?",
-        "answer": "Wear comfortable training clothes and flat-soled shoes (cross-trainers or weightlifting shoes are ideal; thick-soled running shoes are less ideal for barbell work). Bring a water bottle and a small towel. All equipment is provided — barbells, plates, pull-up rigs, kettlebells. Arrive 10 minutes before class so the coach can give you a quick briefing before the session starts."
+        "question": "How is Xthrive different from a regular gym?",
+        "answer": "At a regular gym, you're on your own, with no programming, no accountability, and often no one to correct your form. Xthrive provides structured programming, daily coaching, and a community that keeps you showing up. The workouts change every day, are designed progressively across weeks and months, and are led by qualified coaches who know your name and your goals. The result is consistent progress, not random effort. Most members who've tried both say there's no comparison."
       },
       {
-        "question": "Can I train at Xthrive HSR if I have an injury or health condition?",
-        "answer": "Talk to us before your first session. Our coaches are trained to scale and modify movements around most common injuries — knee, shoulder, lower back — and many members train with pre-existing conditions. We'll never push you into a movement that causes pain. That said, always consult your doctor or physiotherapist for medical clearance if you're dealing with a serious condition. Let the coach know when you arrive and they'll take care of the rest."
+        "question": "How much does Xthrive HSR cost?",
+        "answer": "Memberships at Xthrive HSR Layout are priced in line with other premium strength and conditioning gyms in Bengaluru, with monthly, quarterly, half-yearly, and annual options. Pricing reflects what you get: small group classes, qualified coaches, structured programming, and unlimited training across functional fitness, calisthenics, Olympic weightlifting, weight training, endurance, and strength and conditioning. We don't run discount sales or lock-in tactics. For current pricing and active offers, WhatsApp us or fill out the form on this page and we'll send you the full plan within the day."
       },
       {
-        "question": "Where exactly is Xthrive HSR located in Bengaluru?",
-        "answer": "Xthrive HSR is located at 4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102. We're easily accessible from the main HSR Layout roads and close to Koramangala and Bellandur. Search 'Xthrive HSR' on Google Maps for turn-by-turn directions, or use the map on this page. If you're having trouble finding us, WhatsApp us directly and we'll guide you in."
+        "question": "Do you offer a free trial class at Xthrive HSR?",
+        "answer": "Yes, we offer free trial classes at Xthrive HSR Layout. Book your free trial through WhatsApp or the form on this page. You'll train alongside regular members, be coached exactly as they are, and get a genuine feel for the programming, community, and coaching quality across functional fitness, calisthenics, or strength and conditioning, depending on the class slot you pick. There's no hard sell at the end. If it's the right fit, you'll know."
+      },
+      {
+        "question": "What should I bring to my first class?",
+        "answer": "Wear comfortable training clothes and flat-soled shoes. Cross-trainers or weightlifting shoes are ideal. Thick-soled running shoes are less ideal for barbell work and calisthenics. Bring a water bottle and a small towel. All equipment is provided, including barbells, plates, pull-up rigs, gymnastic rings, and kettlebells. Arrive 10 minutes before class so the coach can give you a quick briefing before the session starts."
+      },
+      {
+        "question": "Can I train at Xthrive if I have an injury or health condition?",
+        "answer": "Yes, with the right precautions. Talk to us before your first session. Our coaches are trained to scale and modify movements around most common injuries, including knee, shoulder, and lower back issues, and many of our members train with pre-existing conditions across functional fitness and strength training. We'll never push you into a movement that causes pain. That said, please consult your doctor or physiotherapist for medical clearance if you're dealing with a serious condition. Let the coach know when you arrive and we'll take care of the rest."
+      },
+      {
+        "question": "Is it safe to train with a disc bulge or back issue?",
+        "answer": "Yes, with the right setup. For members dealing with disc bulges, sciatica, or other spinal conditions, we recommend an in-house consultation with our top-notch physiotherapist before you begin. Together, we'll build a training program tailored around your specific condition, identify which movements to avoid in the early phase, and progressively reintroduce strength training as your back rebuilds. Many of our HSR Layout members started with disc bulges and now squat, deadlift, and train pain-free. Recovery is a programming problem, and we're built to solve it."
+      },
+      {
+        "question": "Do you provide nutrition guidance at Xthrive?",
+        "answer": "Yes, we provide active on-floor nutrition guidance as part of every membership at Xthrive HSR Layout. Our coaches walk members through the basics of eating for strength, fat loss, recovery, and performance, with practical advice tailored to Indian food, your training load, and your goals. We don't push fad diets, supplement stacks, or one-size-fits-all meal plans. Just real, sustainable nutrition coaching delivered alongside your training, so the work you put in inside the gym actually shows up outside it."
+      },
+      {
+        "question": "Is Xthrive women-friendly?",
+        "answer": "Yes. Roughly half of our members in HSR Layout are women, training across every class we offer, from Olympic weightlifting to calisthenics to functional fitness. Our coaching team includes experienced female coaches, classes are coed by default, and the gym culture is built around respect and mutual support, not intimidation. New members of every gender, body type, and fitness level are welcomed and coached the same way: with patience, structure, and zero judgment."
+      },
+      {
+        "question": "Do you offer calisthenics classes at Xthrive?",
+        "answer": "Yes. Calisthenics is a core part of Xthrive's programming, woven into our functional fitness classes and offered as dedicated skill work for movements like pull-ups, muscle-ups, handstands, dips, and front levers. Whether you've never done a single push-up or you're chasing your first one-arm push-up, our coaches scale calisthenics progressions to your level. All sessions run inside our HSR Layout gym on dedicated rigs, parallettes, gymnastic rings, and pull-up bars."
+      },
+      {
+        "question": "What are the class timings at Xthrive HSR?",
+        "answer": "Xthrive HSR Layout runs multiple class slots daily, including early morning (6 AM and 7 AM), evening (5 PM through 9 PM), and dedicated weekend sessions like the Saturday Barbell Club. The full live schedule is on this website and our booking app. Class formats rotate across functional fitness, Olympic weightlifting, strength and conditioning, weight training, endurance, and calisthenics, so every member can train across modalities through the week."
+      },
+      {
+        "question": "Where is Xthrive HSR located?",
+        "answer": "Xthrive HSR is at 4th Floor, No. 446, 17th Cross Road, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102. We're easily accessible from main HSR Layout roads and close to Koramangala and Bellandur. Search \"Xthrive HSR\" on Google Maps for turn-by-turn directions, or use the map on this page. If you're having trouble finding us, WhatsApp us directly and we'll guide you in."
       }
     ]
   },

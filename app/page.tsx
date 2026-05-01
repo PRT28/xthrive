@@ -49,6 +49,128 @@ const localBusinessSchema = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Xthrive HSR Layout?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Xthrive is a strength and conditioning gym in HSR Layout, Bengaluru, built around coached group classes, functional fitness programming, calisthenics, Olympic weightlifting, and long-term athlete development. We've trained members in HSR for over 6 years, from complete beginners to competitive lifters.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Xthrive good for complete beginners?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Most of our members started with zero gym experience. Every class at Xthrive HSR Layout is coached from start to finish, every movement is scaled to your current ability, and you'll never be thrown into a workout without a proper briefing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is functional fitness the same as CrossFit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Functional fitness is the training methodology. CrossFit is the brand that popularised it. At Xthrive, we use functional fitness principles, calisthenics, and barbell strength with our own programming philosophy built around long-term athlete development.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What happens in a typical functional fitness class?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A typical class runs 60 minutes and has four parts: a structured warm-up, a skill or strength segment (barbell work, calisthenics, or gymnastics), a conditioning workout, and a brief cool-down. The coach leads the entire session.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How is Xthrive different from a regular gym?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "At a regular gym, you're on your own, with no programming, no accountability, and often no one to correct your form. Xthrive provides structured programming, daily coaching, and a community that keeps you showing up.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How much does Xthrive HSR cost?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Memberships at Xthrive HSR Layout are priced in line with other premium strength and conditioning gyms in Bengaluru, with monthly, quarterly, half-yearly, and annual options covering functional fitness, calisthenics, Olympic weightlifting, and more. WhatsApp us for current pricing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer a free trial class at Xthrive HSR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, we offer free trial classes at Xthrive HSR Layout. Book your free trial through WhatsApp or the form on this page. You'll train alongside regular members and get a genuine feel for the programming, community, and coaching quality.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What should I bring to my first class?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Wear comfortable training clothes and flat-soled shoes. Bring a water bottle and a small towel. All equipment is provided, including barbells, plates, pull-up rigs, gymnastic rings, and kettlebells. Arrive 10 minutes before class for a quick briefing.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I train at Xthrive if I have an injury or health condition?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, with the right precautions. Our coaches are trained to scale and modify movements around most common injuries, and many members train with pre-existing conditions across functional fitness and strength training. Talk to us before your first session.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is it safe to train with a disc bulge or back issue?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, with the right setup. For members dealing with disc bulges or spinal conditions, we recommend an in-house consultation with our top-notch physiotherapist. We then build a training program tailored around your specific condition. Many HSR Layout members started with disc bulges and now train pain-free.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide nutrition guidance at Xthrive?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, we provide active on-floor nutrition guidance as part of every membership at Xthrive HSR Layout. Our coaches walk members through eating for strength, fat loss, recovery, and performance, with practical advice tailored to Indian food and your goals.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Xthrive women-friendly?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Roughly half of our members in HSR Layout are women, training across every class we offer, from Olympic weightlifting to calisthenics to functional fitness. Our coaching team includes experienced female coaches.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer calisthenics classes at Xthrive?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Calisthenics is a core part of Xthrive's programming, woven into functional fitness classes and offered as dedicated skill work for pull-ups, muscle-ups, handstands, dips, and front levers. All sessions run inside our HSR Layout gym on dedicated rigs and rings.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What are the class timings at Xthrive HSR?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Xthrive HSR Layout runs multiple class slots daily, including early morning (6 AM and 7 AM), evening (5 PM through 9 PM), and dedicated weekend sessions. Classes rotate across functional fitness, Olympic weightlifting, strength and conditioning, weight training, endurance, and calisthenics.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where is Xthrive HSR located?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Xthrive HSR is at 4th Floor, No. 446, 17th Cross Road, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102. Easily accessible from main HSR Layout roads and close to Koramangala and Bellandur.",
+      },
+    },
+  ],
 };
 
 const heroVideoId = "NtA-Nhyv_rE";
