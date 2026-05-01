@@ -113,12 +113,8 @@
         "label": "Group Classes"
       },
       {
-        "value": "barbell-club",
-        "label": "Saturday Barbell Club"
-      },
-      {
-        "value": "drop-in",
-        "label": "Drop-In Session"
+        "value": "personal-training",
+        "label": "Personal Training"
       },
       {
         "value": "enquiry",
@@ -211,7 +207,7 @@
       {
         "top": "DAY",
         "bottom": "ONE",
-        "description": "Energy lift and mental clarity — you'll leave your first class feeling something you haven't felt in a while."
+        "description": "Energy lift and mental clarity. You'll leave your first class feeling something you haven't felt in a while."
       },
       {
         "top": "WEEK",
@@ -221,22 +217,22 @@
       {
         "top": "MONTH",
         "bottom": "ONE",
-        "description": "Visible changes in strength and endurance. You stop dreading the alarm — the 6am crew is waiting."
+        "description": "Visible changes in strength and endurance. You stop dreading the alarm, the 6am crew is waiting."
       },
       {
         "top": "MONTH",
         "bottom": "THREE",
-        "description": "Enhanced muscle tone, noticeably better fitness. Your lifts are going up every cycle, and you're starting to feel which muscles are firing on every rep."
+        "description": "Enhanced muscle tone, noticeably better fitness. Your lifts are going up every cycle."
       },
       {
         "top": "MONTH",
         "bottom": "SIX",
-        "description": "Noticeable improvements in physique and confidence. The mind-muscle connection is sharp now. You move with awareness, your body responds before you think, and people around you start asking what you're doing differently."
+        "description": "Noticeable improvements in physique and confidence. People around you start asking what you're doing differently."
       },
       {
         "top": "YEAR",
         "bottom": "ONE",
-        "description": "Transformed body. Transformed habits. New baseline. Deep awareness of how your body moves, recovers, and performs. This is the version of you that existed all along."
+        "description": "Transformed body. Transformed habits. New baseline. This is the version of you that existed all along."
       }
     ]
   },
@@ -279,7 +275,7 @@
           "label": "Book a Class →",
           "modalId": "lead-capture"
         },
-        "image": "/images/group_classes/crossfit_group_classes.png",
+        "image": "/images/group_classes/mobility_edited.png",
         "alt": "Mobility group class at Xthrive HSR Layout Bangalore",
         "featured": false
       },
