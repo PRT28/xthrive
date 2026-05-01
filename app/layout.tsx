@@ -3,6 +3,9 @@ import { Chivo_Mono, Host_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 
 const siteUrl = "https://xthrive.in/";
+const siteTitle = "Xthrive HSR | Strength & Conditioning Gym in HSR Layout";
+const siteDescription =
+  "Xthrive is HSR Layout's favourite functional fitness, strength & conditioning gym. Coached classes for beginners and advanced athletes.";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,9 +27,8 @@ const chivoMono = Chivo_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Strength & Conditioning Gym in HSR Layout, Bangalore | Xthrive HSR",
-  description:
-    "Xthrive HSR is HSR Layout's #1 functional fitness & strength conditioning gym. Rated 4.9★ on Google. Expert coaching, group classes & Saturday Barbell Club. Book a free drop-in today.",
+  title: siteTitle,
+  description: siteDescription,
   keywords: [
     "strength conditioning gym HSR Layout",
     "functional fitness gym Bangalore",
@@ -40,12 +42,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     type: "website",
     siteName: "Xthrive HSR",
-    title: "Xthrive HSR | Strength & Conditioning Gym in HSR Layout, Bangalore",
-    description:
-      "HSR Layout's favourite functional fitness gym. 4.9★ on Google. Group classes, barbell club & expert coaching. Book a free drop-in.",
+    title: siteTitle,
+    description: siteDescription,
     url: siteUrl,
     images: [
       {
@@ -58,9 +64,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Xthrive HSR | Functional Fitness Gym HSR Layout Bangalore",
-    description:
-      "Strength. Community. Relentless. HSR Layout's favourite gym — rated 4.9★ on Google.",
+    title: siteTitle,
+    description: siteDescription,
     images: ["/og-image.svg"],
   },
   other: {
