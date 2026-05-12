@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Xthrive HSR",
-    "logoSrc": "https://xthrive.in/icon-full-white.png",
+    "logoSrc": "/logo.png",
     "logoAlt": "Xthrive HSR",
     "phoneDisplay": "8951049082",
     "phoneLink": "tel:+918951049082",
