@@ -187,12 +187,12 @@
 
 .mobileMenuOpen {
   grid-template-rows: 1fr;
+  padding: 1rem 1.25rem 1.25rem;
   opacity: 1;
 }
 
 .mobileMenuInner {
   overflow: hidden;
-  padding: 1rem 1.25rem 1.25rem;
   display: flex;
   font-family: var(--font-chivo-mono);
   flex-direction: column;
@@ -211,17 +211,21 @@
 .mobileSocialRow {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
   padding: 0.25rem 0;
 }
 
 .mobileSocialLink {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  color: rgb(255 255 255 / 55%);
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 12%);
+  background: rgb(255 255 255 / 7%);
+  color: rgb(255 255 255 / 72%);
   text-decoration: none;
-  font-size: 0.9rem;
 }
 
 .mobileMenuCta {
@@ -495,6 +499,289 @@
   text-transform: uppercase;
 }
 
+.personalTrainingSection {
+  position: relative;
+  overflow: hidden;
+  padding: 4.75rem 0 5.25rem;
+  background:
+    linear-gradient(135deg, #101010 0%, #171717 46%, #22201d 100%);
+  color: white;
+}
+
+.personalTrainingSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 42% 60% at 82% 28%, rgb(216 97 64 / 24%) 0%, transparent 72%),
+    radial-gradient(ellipse 44% 50% at 16% 78%, rgb(74 140 140 / 22%) 0%, transparent 68%),
+    linear-gradient(90deg, rgb(255 255 255 / 5%) 1px, transparent 1px),
+    linear-gradient(0deg, rgb(255 255 255 / 4%) 1px, transparent 1px);
+  background-size: auto, auto, 64px 64px, 64px 64px;
+  pointer-events: none;
+}
+
+.personalTrainingGrid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+.personalTrainingCopy {
+  max-width: 38rem;
+}
+
+.personalTrainingTitle {
+  margin: 0;
+  color: white;
+  font-family: var(--font-host-grotesk);
+  font-size: clamp(2.55rem, 8vw, 4.7rem);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.personalTrainingIntro {
+  margin: 0;
+  color: rgb(255 255 255 / 72%);
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.personalTrainingChecks {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.personalTrainingCheck {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: rgb(255 255 255 / 82%);
+  font-family: var(--font-inter);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.personalTrainingCheck svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: 0.18rem;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.personalTrainingCtas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.personalTrainingVisual {
+  min-width: 0;
+}
+
+.trainingStage {
+  position: relative;
+  min-height: 27rem;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.trainingGridGlow {
+  position: absolute;
+  inset: 8% 5% 6% 14%;
+  border: 1px solid rgb(255 255 255 / 12%);
+  background:
+    linear-gradient(135deg, rgb(74 140 140 / 18%), transparent 48%),
+    linear-gradient(315deg, rgb(216 97 64 / 16%), transparent 52%);
+  box-shadow:
+    inset 0 0 48px rgb(255 255 255 / 6%),
+    0 30px 90px rgb(0 0 0 / 38%);
+  transform: rotateX(58deg) rotateZ(-9deg) translateZ(-80px);
+}
+
+.trainingPhotoCard,
+.trainingMetricCard,
+.trainingOrbit {
+  --parallax-x: 0px;
+  --parallax-y: 0px;
+  transform: translate3d(var(--parallax-x), var(--parallax-y), 0);
+  will-change: transform;
+  transition: transform 0.16s ease-out;
+}
+
+.trainingPhotoCard {
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 15%);
+  background: #111;
+  box-shadow: 0 28px 70px rgb(0 0 0 / 42%);
+}
+
+.trainingPhotoCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 38%, rgb(0 0 0 / 64%) 100%),
+    linear-gradient(120deg, rgb(255 255 255 / 12%) 0%, transparent 32%);
+}
+
+.trainingLottieCard {
+  inset: 1.5rem 5% 3.25rem 8%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background:
+    radial-gradient(circle at 76% 20%, rgb(216 97 64 / 16%), transparent 34%),
+    linear-gradient(145deg, rgb(255 255 255 / 96%), rgb(226 239 239 / 92%));
+  transform:
+    translate3d(var(--parallax-x), var(--parallax-y), 0)
+    rotateY(-9deg)
+    rotateX(4deg);
+}
+
+.trainingLottieCard::after {
+  background:
+    linear-gradient(180deg, transparent 58%, rgb(0 0 0 / 18%) 100%),
+    linear-gradient(120deg, rgb(255 255 255 / 32%) 0%, transparent 30%);
+}
+
+.trainingLottie {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 27rem);
+  max-height: 100%;
+  aspect-ratio: 806 / 671;
+}
+
+.trainingLottie svg {
+  width: 100%;
+  height: 100%;
+}
+
+.trainingPhotoCardFloat {
+  right: 0;
+  bottom: 0.4rem;
+  width: min(46%, 15rem);
+  aspect-ratio: 0.82;
+  border-radius: 8px;
+  transform:
+    translate3d(var(--parallax-x), var(--parallax-y), 0)
+    rotateY(14deg)
+    rotateZ(3deg);
+}
+
+.trainingPhoto {
+  object-fit: cover;
+}
+
+.trainingMetricCard {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 4;
+  display: grid;
+  gap: 0.2rem;
+  min-width: 8rem;
+  padding: 1rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(255 255 255 / 16%);
+  background: rgb(13 13 13 / 86%);
+  box-shadow: 0 18px 50px rgb(0 0 0 / 36%);
+  backdrop-filter: blur(14px);
+}
+
+.trainingMetricCard span {
+  color: rgb(255 255 255 / 58%);
+  font-family: var(--font-chivo-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.trainingMetricCard strong {
+  color: white;
+  font-family: var(--font-host-grotesk);
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.trainingOrbit {
+  position: absolute;
+  left: 0.2rem;
+  bottom: 4.25rem;
+  z-index: 5;
+  width: 8.5rem;
+  height: 8.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  color: white;
+}
+
+.trainingOrbitRing {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgb(255 255 255 / 22%);
+  border-radius: inherit;
+  animation: trainingOrbitSpin 8s linear infinite;
+}
+
+.trainingOrbitRing::before,
+.trainingOrbitRing::after {
+  content: "";
+  position: absolute;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: #D86140;
+  box-shadow: 0 0 18px rgb(216 97 64 / 80%);
+}
+
+.trainingOrbitRing::before {
+  top: -0.28rem;
+  left: 50%;
+}
+
+.trainingOrbitRing::after {
+  right: 0.5rem;
+  bottom: 0.85rem;
+  background: var(--teal);
+  box-shadow: 0 0 18px rgb(74 140 140 / 80%);
+}
+
+.trainingOrbitDot {
+  position: absolute;
+  inset: 1.2rem;
+  border-radius: inherit;
+  border: 1px dashed rgb(255 255 255 / 22%);
+  animation: trainingOrbitSpin 12s linear infinite reverse;
+}
+
+.trainingOrbitCore {
+  position: relative;
+  width: 4.6rem;
+  height: 4.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--teal);
+  color: white;
+  font-family: var(--font-host-grotesk);
+  font-size: 1.35rem;
+  font-weight: 900;
+  box-shadow: 0 14px 38px rgb(74 140 140 / 34%);
+}
+
 .whatsappFloat {
   position: fixed;
   bottom: 1.75rem;
@@ -626,7 +913,10 @@
 
 .statValueWrap {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.08em;
+  line-height: 0.95;
 }
 
 .statNum {
@@ -634,18 +924,21 @@
   font-family: var(--font-host-grotesk);
   font-size: clamp(1rem, 6vw, 2.5rem);
   font-weight: 400;
+  line-height: 1;
 }
 
 .statPlus {
   color: white;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1rem, 4vw, 2rem);
   font-weight: 400;
+  line-height: 1;
 }
 
 .statStar {
   color: var(--google-yellow);
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: clamp(1rem, 6vw, 2.5rem);
   font-weight: 900;
+  line-height: 1;
 }
 
 .statLabel {
@@ -1004,7 +1297,7 @@
   transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.classCard:hover .classImage {
+.classCardOpen .classImage {
   transform: scale(1.04);
 }
 
@@ -1017,7 +1310,7 @@
   transition: opacity 0.3s ease;
 }
 
-.classCard:hover .classOverlay {
+.classCardOpen .classOverlay {
   opacity: 0.92;
 }
 
@@ -1052,11 +1345,6 @@
     transform 0.3s ease;
 }
 
-.classCard:hover .classArrowButton {
-  background: rgb(74 140 140 / 22%);
-  transform: translateY(-1px);
-}
-
 .classArrowIcon {
   width: 1.45rem;
   height: 1.45rem;
@@ -1084,9 +1372,7 @@
     transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.classCard:hover .classBody,
-.classCard:focus .classBody,
-.classCard:focus-within .classBody {
+.classCardOpen .classBody {
   height: 250px;
   transform: translateY(-2px);
 }
@@ -1196,14 +1482,40 @@
   -webkit-line-clamp: 2;
 }
 
-.classCard:hover .classText,
-.classCard:focus .classText,
-.classCard:focus-within .classText {
+.classCardOpen .classText {
   display: block;
   max-height: 10rem;
   opacity: 1;
   transform: translateY(0);
   -webkit-line-clamp: unset;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .classCard:hover .classImage {
+    transform: scale(1.04);
+  }
+
+  .classCard:hover .classOverlay {
+    opacity: 0.92;
+  }
+
+  .classCard:hover .classArrowButton {
+    background: rgb(74 140 140 / 22%);
+    transform: translateY(-1px);
+  }
+
+  .classCard:hover .classBody {
+    height: 250px;
+    transform: translateY(-2px);
+  }
+
+  .classCard:hover .classText {
+    display: block;
+    max-height: 10rem;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-line-clamp: unset;
+  }
 }
 
 .classFooter {
@@ -1706,7 +2018,9 @@
 
 .contactTextLink {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
 }
 
 .contactTextLink:hover {
@@ -1888,7 +2202,7 @@
 
 .faqItems {
   margin-top: 0;
-  font-family: var(--font-host-grotesk);
+  font-family: var(--font-inter);
 }
 
 .faqItem {
@@ -1910,6 +2224,7 @@
   color: var(--brand-black);
   font-size: 1rem;
   font-weight: 700;
+  font-family: var(--font-host-grotesk);
   user-select: none;
 }
 
@@ -1949,7 +2264,9 @@
 .faqAnswer {
   padding: 0 0 1.25rem;
   color: var(--brand-body);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: var(--font-inter);
   max-width: 47.5rem;
 }
 
@@ -2105,6 +2422,12 @@
   }
 }
 
+@keyframes trainingOrbitSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .heroBg {
     animation: none;
@@ -2119,9 +2442,18 @@
   .leadCaptureModal {
     animation: none;
   }
+
+  .trainingOrbitRing,
+  .trainingOrbitDot {
+    animation: none;
+  }
 }
 
 @media (max-width: 767px) {
+  .navInner {
+    padding: 0.75rem 0;
+  }
+
   .navInner,
   .container,
   .narrowContainer,
@@ -2161,6 +2493,44 @@
     white-space: normal;
     text-align: center;
     padding-inline: 1rem;
+  }
+
+  .personalTrainingCtas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .personalTrainingCtas .btnPrimary,
+  .personalTrainingCtas .btnOutlineLight {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+    padding-inline: 1rem;
+  }
+
+  .trainingStage {
+    min-height: 23rem;
+  }
+
+  .trainingLottieCard {
+    inset: 1.4rem 1rem 4rem 1.25rem;
+    padding: 0.8rem;
+  }
+
+  .trainingPhotoCardFloat {
+    width: 44%;
+  }
+
+  .trainingOrbit {
+    width: 6.8rem;
+    height: 6.8rem;
+    bottom: 2.8rem;
+  }
+
+  .trainingOrbitCore {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 1.05rem;
   }
 
   .quickStatFirstClass {
@@ -2237,6 +2607,7 @@
   }
 
   .philosophySection,
+  .personalTrainingSection,
   .classesSection,
   .transformationsSection,
   .reviewsSection,
@@ -2246,6 +2617,7 @@
   }
 
   .philosophyGrid,
+  .personalTrainingGrid,
   .contactGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 5rem;

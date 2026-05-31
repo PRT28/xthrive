@@ -6,12 +6,12 @@
     "phoneDisplay": "8951049082",
     "phoneLink": "tel:+918951049082",
     "email": "coachsharanchinivar@gmail.com",
-    "addressLine1": "4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
+    "addressLine1": "4th Floor, No. 446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
     "addressLine2": "Bengaluru, Karnataka 560102",
-    "copyrightText": "© 2026 Xthrive HSR · 4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
+    "copyrightText": "© 2026 Xthrive HSR · 4th Floor, No. 446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
     "footerMeta": "Strength & Conditioning Gym · Functional Fitness · HSR Layout · Bengaluru",
-    "mapUrl": "https://maps.google.com/?q=4th+Floor,+No.446,+17th+Cross+Rd,+above+HDFC+Bank,+Sector+4,+HSR+Layout,+Bengaluru,+Karnataka+560102",
-    "mapEmbedUrl": "https://maps.google.com/maps?q=4th%20Floor%2C%20No.446%2C%2017th%20Cross%20Rd%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&z=16&output=embed",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=XTHRIVE%20-%20Strength%20%26%20Conditioning%20Gym%20%7C%20HSR%20Layout%2C%204th%20Floor%2C%20No.%20446%2C%2017th%20Cross%20Road%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&query_place_id=ChIJl6KwODIVrjsRwi-ypmbvw_U",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=XTHRIVE%20-%20Strength%20%26%20Conditioning%20Gym%20%7C%20HSR%20Layout%2C%204th%20Floor%2C%20No.%20446%2C%2017th%20Cross%20Road%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&z=16&output=embed",
     "instagramAction": {
       "type": "external-link",
       "label": "Instagram",
@@ -145,6 +145,38 @@
         "url": "tel:+918951049082"
       }
     ]
+  },
+  "personalTraining": {
+    "sectionLabel": "Personal Training",
+    "titleLines": [
+      "One coach.",
+      "One plan.",
+      "Built around you."
+    ],
+    "intro": "For members who want focused coaching, personal training at Xthrive combines assessment, technique correction, progressive strength work, conditioning, and habit support in a plan matched to your body, schedule, and goal.",
+    "points": [
+      "Movement assessment and goal mapping before your first block",
+      "Private coaching for strength, fat loss, mobility, or return-to-training",
+      "Technique feedback, progress tracking, and practical nutrition guidance"
+    ],
+    "primaryAction": {
+      "type": "open-modal",
+      "label": "Book Personal Training",
+      "modalId": "lead-capture"
+    },
+    "secondaryAction": {
+      "type": "external-link",
+      "label": "Talk to a Coach",
+      "url": "tel:+918951049082"
+    },
+    "visual": {
+      "mainImage": "/images/gallery/4.jpg",
+      "mainAlt": "One-on-one deadlift coaching at Xthrive HSR Layout Bengaluru",
+      "secondaryImage": "/images/gallery/12.jpg",
+      "secondaryAlt": "Personal coaching and skill practice at Xthrive HSR Layout Bengaluru",
+      "metricLabel": "Coach-led",
+      "metricValue": "1:1"
+    }
   },
   "about": {
     "stats": [
@@ -544,7 +576,7 @@
     "addressCta": {
       "type": "external-link",
       "label": "Get Directions →",
-      "url": "https://maps.google.com/?q=4th+Floor,+No.446,+17th+Cross+Rd,+above+HDFC+Bank,+Sector+4,+HSR+Layout,+Bengaluru,+Karnataka+560102",
+      "url": "https://www.google.com/maps/search/?api=1&query=XTHRIVE%20-%20Strength%20%26%20Conditioning%20Gym%20%7C%20HSR%20Layout%2C%204th%20Floor%2C%20No.%20446%2C%2017th%20Cross%20Road%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&query_place_id=ChIJl6KwODIVrjsRwi-ypmbvw_U",
       "newTab": true
     },
     "phoneLabel": "Phone",
@@ -559,7 +591,7 @@
     "hours": [
       "Mon–Fri: 5:30 AM – 9 PM",
       "Saturday: 6 AM – 1 PM",
-      "Sunday: 7 AM – 11 AM"
+      "Sunday: Closed"
     ]
   },
   "faq": {

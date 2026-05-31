@@ -10,6 +10,7 @@ import {
   ContactSection,
   FaqSection,
   FooterSection,
+  PersonalTrainingSection,
   ResultsSection,
   ReviewsSection,
 } from "@/components/home/sections";
@@ -31,7 +32,7 @@ const localBusinessSchema = {
   logo: "https://xthrive.in/logo.png",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "4th Floor, No.446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
+    streetAddress: "4th Floor, No. 446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
     addressLocality: "Bengaluru",
     addressRegion: "Karnataka",
     postalCode: "560102",
@@ -43,7 +44,7 @@ const localBusinessSchema = {
     longitude: 77.6446,
   },
   hasMap:
-    "https://maps.google.com/?q=4th+Floor,+No.446,+17th+Cross+Rd,+above+HDFC+Bank,+Sector+4,+HSR+Layout,+Bengaluru,+Karnataka+560102",
+    "https://www.google.com/maps/search/?api=1&query=XTHRIVE%20-%20Strength%20%26%20Conditioning%20Gym%20%7C%20HSR%20Layout%2C%204th%20Floor%2C%20No.%20446%2C%2017th%20Cross%20Road%2C%20above%20HDFC%20Bank%2C%20Sector%204%2C%20HSR%20Layout%2C%20Bengaluru%2C%20Karnataka%20560102&query_place_id=ChIJl6KwODIVrjsRwi-ypmbvw_U",
 };
 
 const faqSchema = {
@@ -274,6 +275,7 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <PersonalTrainingSection content={content.personalTraining} />
       <AboutSection content={content.about} />
       <ResultsSection content={content.results} />
       <ClassesSection content={content.classes} />

@@ -2,11 +2,84 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ActionLink } from "@/components/action-link";
+import { ClassCard } from "@/components/home/class-card";
 import { LeadForm } from "@/components/lead-form";
 import { GalleryGrid } from "@/components/home/gallery-grid";
+import { PersonalTrainingLottie } from "@/components/personal-training-lottie";
 import { ReviewAvatar } from "@/components/review-avatar";
 import { ReviewText } from "@/components/review-text";
 import styles from "@/components/site.module.css";
+
+export function PersonalTrainingSection({ content }: { content: any }) {
+  return (
+    <section
+      id="personal-training"
+      className={`${styles.personalTrainingSection} ${styles.grain}`}
+      aria-label="Personal training at Xthrive HSR"
+    >
+      <div className={styles.container}>
+        <div className={styles.personalTrainingGrid}>
+          <div className={styles.personalTrainingCopy} data-reveal data-reveal-state="hidden">
+            <div className={styles.sectionLabel}>{content.sectionLabel}</div>
+            <h2 className={styles.personalTrainingTitle}>
+              {content.titleLines.map((line: string) => (
+                <span key={line}>
+                  {line}
+                  <br />
+                </span>
+              ))}
+            </h2>
+            <div className={styles.accentBar} />
+            <p className={styles.personalTrainingIntro}>{content.intro}</p>
+
+            <div className={styles.personalTrainingChecks}>
+              {content.points.map((point: string) => (
+                <div key={point} className={styles.personalTrainingCheck}>
+                  <CheckIcon />
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.personalTrainingCtas}>
+              <ActionLink action={content.primaryAction} className={styles.btnPrimary}>
+                {content.primaryAction.label}
+                <ArrowIcon />
+              </ActionLink>
+              <ActionLink action={content.secondaryAction} className={styles.btnOutlineLight}>
+                {content.secondaryAction.label}
+              </ActionLink>
+            </div>
+          </div>
+
+          <div className={styles.personalTrainingVisual} data-reveal data-reveal-state="hidden" data-reveal-delay="1">
+            <div className={styles.trainingStage} data-parallax-scene>
+              <div className={styles.trainingGridGlow} />
+              <div
+                className={`${styles.trainingPhotoCard} ${styles.trainingLottieCard}`}
+                data-parallax-layer
+                data-parallax-depth="0.09"
+              >
+                <PersonalTrainingLottie className={styles.trainingLottie} />
+              </div>
+
+              <div className={styles.trainingMetricCard} data-parallax-layer data-parallax-depth="0.14">
+                <span>{content.visual.metricLabel}</span>
+                <strong>{content.visual.metricValue}</strong>
+              </div>
+
+              <div className={styles.trainingOrbit} aria-hidden="true" data-parallax-layer data-parallax-depth="-0.12">
+                <span className={styles.trainingOrbitDot} />
+                <span className={styles.trainingOrbitRing} />
+                <span className={styles.trainingOrbitCore}>1:1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export function AboutSection({ content }: { content: any }) {
   return (
@@ -29,7 +102,7 @@ export function AboutSection({ content }: { content: any }) {
                   >
                     {item.suffix === "★" ? item.value : "0"}
                   </span>
-                  {item.suffix === "+" ? <span className={styles.statPlus}>+</span> : null}
+                  {item.suffix === "+" ? <span className={styles.statNum}>+</span> : null}
                   {item.suffix === "★" ? <span className={styles.statStar}>★</span> : null}
                 </div>
                 <span className={styles.statLabel}>{item.label}</span>
@@ -172,59 +245,8 @@ export function ClassesSection({ content }: { content: any }) {
 
         <div className={styles.classGrid}>
           {content.items.map((item: any, index: number) => (
-            <article
-              key={item.index}
-              className={`${styles.classCard} ${item.featured ? styles.classCardFeatured : ""}`}
-              itemScope
-              itemType="https://schema.org/Service"
-              tabIndex={0}
-              data-reveal
-              data-reveal-state="hidden"
-              data-reveal-delay={index % 3 === 1 ? "1" : index % 3 === 2 ? "2" : undefined}
-            >
-              <meta itemProp="name" content={`${item.title.replace("\n", " ")} – Xthrive HSR Layout Bangalore`} />
-              <meta itemProp="description" content={item.description} />
-
-              <Image
-                src={item.image}
-                alt={item.alt}
-                className={styles.classImage}
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
-              <div className={styles.classOverlay} />
-              <div className={styles.classTint} />
-              
-
-              <div className={styles.classContent}>
-                <div className={styles.classTopRow}>
-                  <span className={styles.classIndex}>{item.index}</span>
-                  <div className={styles.classBadges}>
-                    {item.featured ? <span className={styles.badgeStrong}>★ Exclusive</span> : null}
-                    <span className={styles.badgePill}>{item.badgeOne}</span>
-                    <span className={styles.badgeSoft}>{item.badgeTwo}</span>
-                  </div>
-                </div>
-
-                <div className={styles.classBody}>
-                  <h3 className={styles.classTitle}>
-                    {item.title.split("\n").map((line: string) => (
-                      <span key={line}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </h3>
-                  <p className={styles.classText}>{item.description}</p>
-                </div>
-              </div>
-            </article>
+            <ClassCard key={item.index} item={item} index={index} />
           ))}
-        </div>
-
-        <div className={styles.classFooter} data-reveal data-reveal-state="hidden">
-          <p className={styles.classFooterText}>{content.footerText}</p>
-          
         </div>
       </div>
     </section>
@@ -489,7 +511,7 @@ export function FaqSection({ content }: { content: any }) {
 
         <div className={styles.faqFooter} data-reveal data-reveal-state="hidden">
           <p className={styles.mutedText}>{content.footerText}</p>
-          <ActionLink action={content.footerAction} className={styles.btnDark}>
+          <ActionLink action={content.footerAction} className={styles.btnPrimary}>
             {content.footerAction.label}
           </ActionLink>
         </div>
@@ -621,6 +643,22 @@ function GoogleIcon() {
   );
 }
 
+function ArrowIcon() {
+  return (
+    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M20 6L9 17l-5-5" />
+    </svg>
+  );
+}
+
 function PlusIcon() {
   return (
     <svg width="12" height="12" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24" aria-hidden="true">
@@ -643,13 +681,8 @@ function LocationIcon() {
 
 function PhoneIcon() {
   return (
-    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.8"
-        d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.8 19.8 0 011.62 3.33 2 2 0 013.6 1.27h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11l-.95.95a16 16 0 006.18 6.18l.95-.95a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"
-      />
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1.5 1.5 0 011.52-.36c1.67.55 3.45.85 5.27.85.83 0 1.5.67 1.5 1.5v3.49c0 .83-.67 1.5-1.5 1.5C10.26 22.16 1.84 13.74 1.84 3.8c0-.83.67-1.5 1.5-1.5h3.5c.83 0 1.5.67 1.5 1.5 0 1.82.29 3.6.85 5.27.16.52.03 1.08-.36 1.52l-2.21 2.2z" />
     </svg>
   );
 }
@@ -664,9 +697,12 @@ function WhatsAppSmallIcon() {
 
 function ClockIcon() {
   return (
-    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <circle cx="12" cy="12" r="9" strokeWidth="1.8" />
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M12 7v5l3 2" />
+    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fillRule="evenodd"
+        d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 5a1 1 0 10-2 0v5c0 .38.21.72.55.89l3 1.5a1 1 0 10.9-1.78L13 11.38V7z"
+        clipRule="evenodd"
+      />
     </svg>
   );
 }
@@ -691,8 +727,7 @@ function InstagramFillIcon() {
 function WhatsAppBrandIcon() {
   return (
     <svg className={styles.footerSocialIcon} viewBox="0 0 24 24" aria-hidden="true">
-      <path fill="#25D366" d="M12.05 2C6.56 2 2.1 6.45 2.1 11.94c0 1.75.46 3.46 1.33 4.97L2 22l5.22-1.37a9.92 9.92 0 004.83 1.23h.01c5.49 0 9.95-4.45 9.95-9.94C22 6.45 17.54 2 12.05 2z" />
-      <path fill="#FFFFFF" d="M17.82 14.92c-.24-.12-1.43-.71-1.65-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.21-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.75-1.79-.19-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.02s.87 2.34.99 2.5c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.52.07.46-.07 1.43-.58 1.63-1.15.2-.57.2-1.05.14-1.15-.06-.1-.22-.16-.46-.28z" />
+      <path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
     </svg>
   );
 }

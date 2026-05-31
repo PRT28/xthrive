@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Chivo_Mono, Host_Grotesk, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const siteUrl = "https://xthrive.in/";
@@ -88,12 +89,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const umamiWebsiteId = process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID;
+  const umamiScriptUrl = process.env.NEXT_PUBLIC_UMAMI_SCRIPT_URL;
+
   return (
     <html lang="en">
       <body
         className={`${inter.variable} ${hostGrotesk.variable} ${chivoMono.variable}`}
       >
         {children}
+        {umamiWebsiteId && umamiScriptUrl ? (
+          <Script
+            src={umamiScriptUrl}
+            data-website-id={umamiWebsiteId}
+            strategy="afterInteractive"
+          />
+        ) : null}
       </body>
     </html>
   );
