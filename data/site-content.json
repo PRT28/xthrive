@@ -3,9 +3,9 @@
     "name": "Xthrive HSR",
     "logoSrc": "/logo.png",
     "logoAlt": "Xthrive HSR",
-    "phoneDisplay": "8951049082",
-    "phoneLink": "tel:+918951049082",
-    "email": "coachsharanchinivar@gmail.com",
+    "phoneDisplay": "9180369391",
+    "phoneLink": "tel:+919180369391",
+    "email": "info@xthrive.in",
     "addressLine1": "4th Floor, No. 446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout",
     "addressLine2": "Bengaluru, Karnataka 560102",
     "copyrightText": "© 2026 Xthrive HSR · 4th Floor, No. 446, 17th Cross Rd, above HDFC Bank, Sector 4, HSR Layout, Bengaluru, Karnataka 560102",
@@ -29,7 +29,7 @@
     "whatsappAction": {
       "type": "external-link",
       "label": "WhatsApp",
-      "url": "https://wa.me/918951049082",
+      "url": "https://wa.me/919180369391",
       "newTab": true
     }
   },
@@ -78,7 +78,7 @@
     "action": {
       "type": "external-link",
       "label": "Chat on WhatsApp",
-      "url": "https://wa.me/918951049082?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Xthrive%20HSR",
+      "url": "https://wa.me/919180369391?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Xthrive%20HSR",
       "newTab": true
     }
   },
@@ -104,7 +104,7 @@
     "successAction": {
       "type": "external-link",
       "label": "WhatsApp Us",
-      "url": "https://wa.me/918951049082",
+      "url": "https://wa.me/919180369391",
       "newTab": true
     },
     "options": [
@@ -142,7 +142,7 @@
       {
         "type": "external-link",
         "label": "Talk to Our Coach",
-        "url": "tel:+918951049082"
+        "url": "tel:+919180369391"
       }
     ]
   },
@@ -167,7 +167,7 @@
     "secondaryAction": {
       "type": "external-link",
       "label": "Talk to a Coach",
-      "url": "tel:+918951049082"
+      "url": "tel:+919180369391"
     },
     "visual": {
       "mainImage": "/images/gallery/4.jpg",
@@ -584,7 +584,7 @@
     "whatsappCta": {
       "type": "external-link",
       "label": "Chat with us directly →",
-      "url": "https://wa.me/918951049082",
+      "url": "https://wa.me/919180369391",
       "newTab": true
     },
     "hoursLabel": "Class Hours",

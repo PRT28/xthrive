@@ -25,8 +25,8 @@ const localBusinessSchema = {
   description:
     "Xthrive HSR is HSR Layout's premier strength and conditioning gym. We offer group functional fitness classes, progressive strength programming, and the Saturday Barbell Club — for every level from complete beginner to competitive athlete.",
   url: "https://xthrive.in",
-  telephone: "+91-89510-49082",
-  email: "coachsharanchinivar@gmail.com",
+  telephone: "+91-91803-69391",
+  email: "info@xthrive.in",
   priceRange: "₹₹",
   image: "https://xthrive.in/og-image.jpg",
   logo: "https://xthrive.in/logo.png",
